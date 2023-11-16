@@ -2,7 +2,7 @@
 
 # Beteiligte
 * GeschäftsführerIn
-* DirektorIn
+* DirektorIn/SchulleiterIn
 * LernbegleiterIn
 * DozentIn
 * Externe/r BetreuerIn
