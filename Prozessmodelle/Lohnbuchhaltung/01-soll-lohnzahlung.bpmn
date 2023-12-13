@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="b135d21" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="a64ba6c6-1b88-4aee-b063-e850a87dbbd8">
+  <bpmn:collaboration id="Collaboration_1rdd3zn">
+    <bpmn:participant id="Participant_08pronh" name="Verwaltung" processRef="Process_3cgxvik" />
+    <bpmn:participant id="Participant_1al9hsh" name="Geschäftsführung" processRef="Process_pentjtt" />
+    <bpmn:participant id="Participant_0i23a72" name="Lohnbüro" processRef="Process_xh8ik98" />
+    <bpmn:messageFlow id="Flow_0yry1bi" sourceRef="Event_1bgx1il" targetRef="Event_0qh6z42" />
+    <bpmn:messageFlow id="Flow_1o0dk57" sourceRef="Event_0w67md7" targetRef="Event_09wwdrz" />
+    <bpmn:messageFlow id="Flow_1gj1gfb" sourceRef="Event_1jdp83r" targetRef="Activity_0mmeola" />
+    <bpmn:messageFlow id="Flow_08ewazg" sourceRef="Event_1gqovky" targetRef="Activity_066a0uh" />
+    <bpmn:messageFlow id="Flow_1yzgyl3" sourceRef="Event_0y9zkiv" targetRef="Activity_07gvle3" />
+    <bpmn:textAnnotation id="TextAnnotation_0kiedq9">
+      <bpmn:text>Prüfung direkt in DATEV durch DATEV Unternehmen online</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_1mmpmm0">
+      <bpmn:text>Können Stammdaten für die MA auch direkt in DATEV / Unternehmen Online abgelegt werden?</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_137tpyo">
+      <bpmn:text>Ist-Prozess: Prüfung der Daten in der Verwaltung --&gt; Fehlerquellen durch Übertrag aus Excel durch DATEV Unternehmen online minimiert</bpmn:text>
+    </bpmn:textAnnotation>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_3cgxvik" isExecutable="true">
+    <bpmn:manualTask id="Activity_076ll1g" name="Änderung Lohndaten in DATEV">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software EXCEL" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_08jpp1d</bpmn:incoming>
+      <bpmn:outgoing>Flow_05fnymh</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:exclusiveGateway id="Gateway_186iv88">
+      <bpmn:incoming>Flow_05fnymh</bpmn:incoming>
+      <bpmn:incoming>Flow_0pescqc</bpmn:incoming>
+      <bpmn:outgoing>Flow_171ukov</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateThrowEvent id="Event_1bgx1il" name="Info an GF">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software OUTLOOK " />
+        </zeebe:properties>
+        <zeebe:taskDefinition type="SendMail" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_171ukov</bpmn:incoming>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0unepho" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:exclusiveGateway id="Gateway_1j6a94r" name="Änderungen notwendig?">
+      <bpmn:incoming>Flow_0lcfoja</bpmn:incoming>
+      <bpmn:outgoing>Flow_08jpp1d</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0pescqc</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:manualTask id="Activity_0x58f6p" name="Prüfung Lohndaten in DATEV">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software EXCEL" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1ga2lod</bpmn:incoming>
+      <bpmn:outgoing>Flow_0lcfoja</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:startEvent id="StartEvent_1" name="Monatsmitte">
+      <bpmn:outgoing>Flow_1ga2lod</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_08jpp1d" name="Ja" sourceRef="Gateway_1j6a94r" targetRef="Activity_076ll1g">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=changesneccessary=true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_05fnymh" sourceRef="Activity_076ll1g" targetRef="Gateway_186iv88" />
+    <bpmn:sequenceFlow id="Flow_0pescqc" name="Nein" sourceRef="Gateway_1j6a94r" targetRef="Gateway_186iv88">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=changesneccessary=false</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_171ukov" sourceRef="Gateway_186iv88" targetRef="Event_1bgx1il" />
+    <bpmn:sequenceFlow id="Flow_0lcfoja" sourceRef="Activity_0x58f6p" targetRef="Gateway_1j6a94r" />
+    <bpmn:sequenceFlow id="Flow_1ga2lod" sourceRef="StartEvent_1" targetRef="Activity_0x58f6p" />
+    <bpmn:manualTask id="Activity_0mmeola" name="Abgleich Summe Lohnauswertung und DATEV Zahlungsverkehrt">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="DATEV Zahlungsverkehr" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>Flow_09w9d0h</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:sequenceFlow id="Flow_09w9d0h" sourceRef="Activity_0mmeola" targetRef="Gateway_1f9x2ga" />
+    <bpmn:exclusiveGateway id="Gateway_1f9x2ga" name="Fehler vorhanden?">
+      <bpmn:incoming>Flow_09w9d0h</bpmn:incoming>
+      <bpmn:outgoing>Flow_1mu5qy9</bpmn:outgoing>
+      <bpmn:outgoing>Flow_031bxfy</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateThrowEvent id="Event_1gqovky" name="Meldung an Lohnbüro">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software OUTLOOK" />
+        </zeebe:properties>
+        <zeebe:taskDefinition type="SendMail" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1mu5qy9</bpmn:incoming>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_19yl41y" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:sequenceFlow id="Flow_1mu5qy9" sourceRef="Gateway_1f9x2ga" targetRef="Event_1gqovky" />
+    <bpmn:sequenceFlow id="Flow_031bxfy" sourceRef="Gateway_1f9x2ga" targetRef="Event_0y9zkiv" />
+    <bpmn:intermediateThrowEvent id="Event_0y9zkiv" name="Meldung an GF">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software OUTLOOK" />
+        </zeebe:properties>
+        <zeebe:taskDefinition type="SendMail" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_031bxfy</bpmn:incoming>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1lcnmca" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:textAnnotation id="TextAnnotation_0vo4e31">
+      <bpmn:text>Kommunikation über DATEV</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0kya87u" sourceRef="Activity_0x58f6p" targetRef="TextAnnotation_0kiedq9" />
+    <bpmn:association id="Association_1n3rdn5" sourceRef="Event_1bgx1il" targetRef="TextAnnotation_0vo4e31" />
+    <bpmn:textAnnotation id="TextAnnotation_01eanlf">
+      <bpmn:text>https://apps.datev.de/help-center/documents/1071568 DATEV Bank online</bpmn:text>
+    </bpmn:textAnnotation>
+  </bpmn:process>
+  <bpmn:process id="Process_pentjtt" isExecutable="false">
+    <bpmn:manualTask id="Activity_1gpy1kb" name="Prüfung Lohndaten in DATEV">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software EXCEL" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1677qgr</bpmn:incoming>
+      <bpmn:outgoing>Flow_1jbw9kc</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:exclusiveGateway id="Gateway_09zf34w" name="Änderung notwendig?">
+      <bpmn:incoming>Flow_1jbw9kc</bpmn:incoming>
+      <bpmn:outgoing>Flow_0nh6kq6</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1rz8lj5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:manualTask id="Activity_028upfy" name="Änderungen der Lohndaten in DATEV">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software EXCEL" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0nh6kq6</bpmn:incoming>
+      <bpmn:outgoing>Flow_1p1n898</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:startEvent id="Event_0qh6z42" name="Mail von Verwaltung">
+      <bpmn:outgoing>Flow_1677qgr</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0rh6dod" />
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_0dx9bg6" sourceRef="Gateway_1bpieb6" targetRef="Event_0w67md7" />
+    <bpmn:sequenceFlow id="Flow_1rz8lj5" name="Nein" sourceRef="Gateway_09zf34w" targetRef="Gateway_1bpieb6" />
+    <bpmn:sequenceFlow id="Flow_1677qgr" sourceRef="Event_0qh6z42" targetRef="Activity_1gpy1kb" />
+    <bpmn:sequenceFlow id="Flow_1jbw9kc" sourceRef="Activity_1gpy1kb" targetRef="Gateway_09zf34w" />
+    <bpmn:sequenceFlow id="Flow_0nh6kq6" name="Ja" sourceRef="Gateway_09zf34w" targetRef="Activity_028upfy" />
+    <bpmn:sequenceFlow id="Flow_1p1n898" sourceRef="Activity_028upfy" targetRef="Gateway_1bpieb6" />
+    <bpmn:sequenceFlow id="Flow_06o2jkn" sourceRef="Activity_07gvle3" targetRef="Event_0euvff8" />
+    <bpmn:exclusiveGateway id="Gateway_1bpieb6">
+      <bpmn:incoming>Flow_1rz8lj5</bpmn:incoming>
+      <bpmn:incoming>Flow_1p1n898</bpmn:incoming>
+      <bpmn:outgoing>Flow_0dx9bg6</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateThrowEvent id="Event_0w67md7" name="Übergabe Datei an Lohnbüro">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software OUTLOOK" />
+        </zeebe:properties>
+        <zeebe:taskDefinition type="SendMail" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0dx9bg6</bpmn:incoming>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1ndbczs" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:manualTask id="Activity_07gvle3" name="Weitergabe der Lohnzahlungen an Kreditinstitut">
+      <bpmn:outgoing>Flow_06o2jkn</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:endEvent id="Event_0euvff8" name="Lohnzahlung beendet">
+      <bpmn:incoming>Flow_06o2jkn</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:textAnnotation id="TextAnnotation_1i5q5p6">
+      <bpmn:text>Kommunikation über DATEV</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_15rymp4" sourceRef="Event_0w67md7" targetRef="TextAnnotation_1i5q5p6" />
+    <bpmn:association id="Association_0hqe66j" sourceRef="Activity_07gvle3" targetRef="TextAnnotation_01eanlf" />
+  </bpmn:process>
+  <bpmn:process id="Process_xh8ik98" isExecutable="false">
+    <bpmn:parallelGateway id="Gateway_04oiq2c">
+      <bpmn:incoming>Flow_002yupj</bpmn:incoming>
+      <bpmn:outgoing>Flow_1nydyp4</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1604z0f</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1wt927k</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:task id="Activity_1d34me8" name="Generierung Lohn-abrechnung in DATEV">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="DATEV Lohn und Gehalt in der Kanzlei" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1oyunf1</bpmn:incoming>
+      <bpmn:outgoing>Flow_002yupj</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1iq4dar" name="Erstellung Lohn-Auswertung">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="DATEV Lohn und Gehalt in der Kanzlei" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1nydyp4</bpmn:incoming>
+      <bpmn:outgoing>Flow_0iuaoo5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1quzvn0" name="Meldungen an Krankenkassen und Finanzamt">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="DATEV Lohn und Gehalt in der Kanzlei" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1604z0f</bpmn:incoming>
+      <bpmn:outgoing>Flow_1monolb</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_09uzuoh" name="Erstellung SEPA Datei für Lohnzahlung">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="DATEV Lohn und Gehalt in der Kanzlei" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1wt927k</bpmn:incoming>
+      <bpmn:outgoing>Flow_1p0zjxa</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:manualTask id="Activity_066a0uh" name="Fehler in DATEV korrigieren">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="DATEV Lohn und Gehalt in der Kanzlei" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>Flow_12x9mgf</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:parallelGateway id="Gateway_0esvk1o">
+      <bpmn:incoming>Flow_1monolb</bpmn:incoming>
+      <bpmn:incoming>Flow_0iuaoo5</bpmn:incoming>
+      <bpmn:incoming>Flow_1p0zjxa</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ury43n</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:manualTask id="Activity_0wlfebq" name="Import SEPA Daten in DATEV Zahlungsverkehr">
+      <bpmn:incoming>Flow_0ury43n</bpmn:incoming>
+      <bpmn:outgoing>Flow_01io7w6</bpmn:outgoing>
+    </bpmn:manualTask>
+    <bpmn:sequenceFlow id="Flow_12x9mgf" sourceRef="Activity_066a0uh" targetRef="Gateway_10g33k0" />
+    <bpmn:sequenceFlow id="Flow_002yupj" sourceRef="Activity_1d34me8" targetRef="Gateway_04oiq2c" />
+    <bpmn:sequenceFlow id="Flow_1nydyp4" sourceRef="Gateway_04oiq2c" targetRef="Activity_1iq4dar" />
+    <bpmn:sequenceFlow id="Flow_1604z0f" sourceRef="Gateway_04oiq2c" targetRef="Activity_1quzvn0" />
+    <bpmn:sequenceFlow id="Flow_1wt927k" sourceRef="Gateway_04oiq2c" targetRef="Activity_09uzuoh" />
+    <bpmn:sequenceFlow id="Flow_0iuaoo5" sourceRef="Activity_1iq4dar" targetRef="Gateway_0esvk1o" />
+    <bpmn:sequenceFlow id="Flow_1monolb" sourceRef="Activity_1quzvn0" targetRef="Gateway_0esvk1o" />
+    <bpmn:sequenceFlow id="Flow_1p0zjxa" sourceRef="Activity_09uzuoh" targetRef="Gateway_0esvk1o" />
+    <bpmn:sequenceFlow id="Flow_0ury43n" sourceRef="Gateway_0esvk1o" targetRef="Activity_0wlfebq" />
+    <bpmn:sequenceFlow id="Flow_0b0dl61" sourceRef="Event_09wwdrz" targetRef="Activity_18340qm" />
+    <bpmn:sequenceFlow id="Flow_1oyunf1" sourceRef="Gateway_10g33k0" targetRef="Activity_1d34me8" />
+    <bpmn:sequenceFlow id="Flow_01io7w6" sourceRef="Activity_0wlfebq" targetRef="Event_1jdp83r" />
+    <bpmn:intermediateThrowEvent id="Event_1jdp83r" name="Mail an GF inkl. Lohnauswertung">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="Medium" value="Software OUTLOOK " />
+        </zeebe:properties>
+        <zeebe:taskDefinition type="SendMail" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_01io7w6</bpmn:incoming>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_198d1bg" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:exclusiveGateway id="Gateway_10g33k0">
+      <bpmn:incoming>Flow_12x9mgf</bpmn:incoming>
+      <bpmn:incoming>Flow_1jnmixm</bpmn:incoming>
+      <bpmn:outgoing>Flow_1oyunf1</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="Activity_18340qm" name="Übernahme Daten aus Unternehmen Online">
+      <bpmn:incoming>Flow_0b0dl61</bpmn:incoming>
+      <bpmn:outgoing>Flow_1jnmixm</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1jnmixm" sourceRef="Activity_18340qm" targetRef="Gateway_10g33k0" />
+    <bpmn:startEvent id="Event_09wwdrz" name="Mail von FASW">
+      <bpmn:outgoing>Flow_0b0dl61</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_1229js9" />
+    </bpmn:startEvent>
+    <bpmn:textAnnotation id="TextAnnotation_0j4p60j">
+      <bpmn:text>Ist es notwendig, dass die GF Prüfung durchführt? Ggfs Prüfung durch Lohnbüro, Prüfschleife kann weg wenn vorher Änderungen kommuniziert</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0r6x983" sourceRef="Activity_1gpy1kb" targetRef="TextAnnotation_0j4p60j" />
+  </bpmn:process>
+  <bpmn:message id="Message_2ukrmod" name="Message_2ukrmod">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=Message_2ukrmod" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1rdd3zn">
+      <bpmndi:BPMNShape id="BPMNShape_1j2szkx" bpmnElement="Participant_08pronh" isHorizontal="true">
+        <dc:Bounds x="180" y="128" width="2730" height="520" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_076ll1g_di" bpmnElement="Activity_076ll1g">
+        <dc:Bounds x="550" y="218" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_186iv88_di" bpmnElement="Gateway_186iv88" isMarkerVisible="true">
+        <dc:Bounds x="715" y="285" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_17foa35" bpmnElement="Event_1bgx1il">
+        <dc:Bounds x="852" y="292" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="786" y="296" width="53" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1j6a94r_di" bpmnElement="Gateway_1j6a94r" isMarkerVisible="true">
+        <dc:Bounds x="465" y="285" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="520" y="309" width="59" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0x58f6p_di" bpmnElement="Activity_0x58f6p">
+        <dc:Bounds x="330" y="270" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1rlxrhw" bpmnElement="StartEvent_1">
+        <dc:Bounds x="252" y="292" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="243" y="335" width="60" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0mmeola_di" bpmnElement="Activity_0mmeola">
+        <dc:Bounds x="1830" y="450" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1f9x2ga_di" bpmnElement="Gateway_1f9x2ga" isMarkerVisible="true">
+        <dc:Bounds x="2005" y="465" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2001" y="436" width="58" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0036nlk" bpmnElement="Event_1gqovky">
+        <dc:Bounds x="2122" y="542" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2161" y="546" width="58" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1dixr5g" bpmnElement="Event_0y9zkiv">
+        <dc:Bounds x="2212" y="412" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2242" y="416" width="77" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0vo4e31_di" bpmnElement="TextAnnotation_0vo4e31">
+        <dc:Bounds x="890" y="208" width="100" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_01eanlf_di" bpmnElement="TextAnnotation_01eanlf">
+        <dc:Bounds x="2360" y="590" width="170" height="50" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_08jpp1d_di" bpmnElement="Flow_08jpp1d">
+        <di:waypoint x="490" y="285" />
+        <di:waypoint x="490" y="258" />
+        <di:waypoint x="550" y="258" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="473" y="265" width="12" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_05fnymh_di" bpmnElement="Flow_05fnymh">
+        <di:waypoint x="650" y="258" />
+        <di:waypoint x="740" y="258" />
+        <di:waypoint x="740" y="285" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0pescqc_di" bpmnElement="Flow_0pescqc">
+        <di:waypoint x="490" y="335" />
+        <di:waypoint x="490" y="378" />
+        <di:waypoint x="740" y="378" />
+        <di:waypoint x="740" y="335" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="518" y="366" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_171ukov_di" bpmnElement="Flow_171ukov">
+        <di:waypoint x="765" y="310" />
+        <di:waypoint x="852" y="310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0lcfoja_di" bpmnElement="Flow_0lcfoja">
+        <di:waypoint x="430" y="310" />
+        <di:waypoint x="465" y="310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ga2lod_di" bpmnElement="Flow_1ga2lod">
+        <di:waypoint x="288" y="310" />
+        <di:waypoint x="330" y="310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09w9d0h_di" bpmnElement="Flow_09w9d0h">
+        <di:waypoint x="1930" y="490" />
+        <di:waypoint x="2005" y="490" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1mu5qy9_di" bpmnElement="Flow_1mu5qy9">
+        <di:waypoint x="2030" y="515" />
+        <di:waypoint x="2030" y="560" />
+        <di:waypoint x="2122" y="560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_031bxfy_di" bpmnElement="Flow_031bxfy">
+        <di:waypoint x="2055" y="490" />
+        <di:waypoint x="2114" y="490" />
+        <di:waypoint x="2114" y="430" />
+        <di:waypoint x="2212" y="430" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0kya87u_di" bpmnElement="Association_0kya87u">
+        <di:waypoint x="390" y="270" />
+        <di:waypoint x="436" y="91" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1n3rdn5_di" bpmnElement="Association_1n3rdn5">
+        <di:waypoint x="881" y="296" />
+        <di:waypoint x="919" y="249" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BPMNShape_1ymu13p" bpmnElement="Participant_1al9hsh" isHorizontal="true">
+        <dc:Bounds x="180" y="640" width="2730" height="235" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0gxz9qf" bpmnElement="Activity_1gpy1kb">
+        <dc:Bounds x="630" y="720" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_09zf34w_di" bpmnElement="Gateway_09zf34w" isMarkerVisible="true">
+        <dc:Bounds x="765" y="735" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="763" y="792" width="57" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_028upfy_di" bpmnElement="Activity_028upfy">
+        <dc:Bounds x="850" y="660" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0qh6z42_di" bpmnElement="Event_0qh6z42">
+        <dc:Bounds x="512" y="742" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="504" y="785" width="54" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1bpieb6_di" bpmnElement="Gateway_1bpieb6" isMarkerVisible="true">
+        <dc:Bounds x="995" y="735" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1hp7v9i" bpmnElement="Event_0w67md7">
+        <dc:Bounds x="1112" y="742" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1091" y="706" width="78" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07gvle3_di" bpmnElement="Activity_07gvle3">
+        <dc:Bounds x="2310" y="700" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0euvff8_di" bpmnElement="Event_0euvff8">
+        <dc:Bounds x="2512" y="722" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2499" y="765" width="64" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1i5q5p6_di" bpmnElement="TextAnnotation_1i5q5p6">
+        <dc:Bounds x="1230" y="700" width="100" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0dx9bg6_di" bpmnElement="Flow_0dx9bg6">
+        <di:waypoint x="1045" y="760" />
+        <di:waypoint x="1112" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1rz8lj5_di" bpmnElement="Flow_1rz8lj5">
+        <di:waypoint x="815" y="760" />
+        <di:waypoint x="995" y="760" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="894" y="742" width="23" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1677qgr_di" bpmnElement="Flow_1677qgr">
+        <di:waypoint x="548" y="760" />
+        <di:waypoint x="630" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jbw9kc_di" bpmnElement="Flow_1jbw9kc">
+        <di:waypoint x="730" y="760" />
+        <di:waypoint x="765" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0nh6kq6_di" bpmnElement="Flow_0nh6kq6">
+        <di:waypoint x="790" y="735" />
+        <di:waypoint x="790" y="700" />
+        <di:waypoint x="850" y="700" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="799" y="715" width="12" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1p1n898_di" bpmnElement="Flow_1p1n898">
+        <di:waypoint x="950" y="700" />
+        <di:waypoint x="1020" y="700" />
+        <di:waypoint x="1020" y="735" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_06o2jkn_di" bpmnElement="Flow_06o2jkn">
+        <di:waypoint x="2410" y="740" />
+        <di:waypoint x="2512" y="740" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_15rymp4_di" bpmnElement="Association_15rymp4">
+        <di:waypoint x="1147" y="755" />
+        <di:waypoint x="1230" y="730" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0hqe66j_di" bpmnElement="Association_0hqe66j">
+        <di:waypoint x="2375" y="700" />
+        <di:waypoint x="2397" y="640" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_0i23a72_di" bpmnElement="Participant_0i23a72" isHorizontal="true">
+        <dc:Bounds x="180" y="875" width="2730" height="365" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_04oiq2c_di" bpmnElement="Gateway_04oiq2c">
+        <dc:Bounds x="1365" y="950" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1d34me8_di" bpmnElement="Activity_1d34me8">
+        <dc:Bounds x="1230" y="935" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1iq4dar_di" bpmnElement="Activity_1iq4dar">
+        <dc:Bounds x="1480" y="890" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1quzvn0_di" bpmnElement="Activity_1quzvn0">
+        <dc:Bounds x="1480" y="980" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_09uzuoh_di" bpmnElement="Activity_09uzuoh">
+        <dc:Bounds x="1480" y="1070" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_066a0uh_di" bpmnElement="Activity_066a0uh">
+        <dc:Bounds x="2150" y="920" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0esvk1o_di" bpmnElement="Gateway_0esvk1o">
+        <dc:Bounds x="1635" y="995" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0wlfebq_di" bpmnElement="Activity_0wlfebq">
+        <dc:Bounds x="1700" y="980" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1jjaul7" bpmnElement="Event_1jdp83r">
+        <dc:Bounds x="1862" y="1002" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1839" y="1043" width="82" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_10g33k0_di" bpmnElement="Gateway_10g33k0" isMarkerVisible="true">
+        <dc:Bounds x="1165" y="950" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_18340qm_di" bpmnElement="Activity_18340qm">
+        <dc:Bounds x="1040" y="935" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1ri9tl6" bpmnElement="Event_09wwdrz">
+        <dc:Bounds x="962" y="957" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="944" y="1000" width="76" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0j4p60j_di" bpmnElement="TextAnnotation_0j4p60j">
+        <dc:Bounds x="610" y="888" width="220" height="84" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_12x9mgf_di" bpmnElement="Flow_12x9mgf">
+        <di:waypoint x="2200" y="1000" />
+        <di:waypoint x="2200" y="1200" />
+        <di:waypoint x="1190" y="1200" />
+        <di:waypoint x="1190" y="1000" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_002yupj_di" bpmnElement="Flow_002yupj">
+        <di:waypoint x="1330" y="975" />
+        <di:waypoint x="1365" y="975" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1nydyp4_di" bpmnElement="Flow_1nydyp4">
+        <di:waypoint x="1390" y="950" />
+        <di:waypoint x="1390" y="930" />
+        <di:waypoint x="1480" y="930" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1604z0f_di" bpmnElement="Flow_1604z0f">
+        <di:waypoint x="1415" y="975" />
+        <di:waypoint x="1448" y="975" />
+        <di:waypoint x="1448" y="1020" />
+        <di:waypoint x="1480" y="1020" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1wt927k_di" bpmnElement="Flow_1wt927k">
+        <di:waypoint x="1390" y="1000" />
+        <di:waypoint x="1390" y="1110" />
+        <di:waypoint x="1480" y="1110" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0iuaoo5_di" bpmnElement="Flow_0iuaoo5">
+        <di:waypoint x="1580" y="930" />
+        <di:waypoint x="1660" y="930" />
+        <di:waypoint x="1660" y="995" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1monolb_di" bpmnElement="Flow_1monolb">
+        <di:waypoint x="1580" y="1020" />
+        <di:waypoint x="1635" y="1020" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1p0zjxa_di" bpmnElement="Flow_1p0zjxa">
+        <di:waypoint x="1580" y="1110" />
+        <di:waypoint x="1660" y="1110" />
+        <di:waypoint x="1660" y="1045" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ury43n_di" bpmnElement="Flow_0ury43n">
+        <di:waypoint x="1685" y="1020" />
+        <di:waypoint x="1700" y="1020" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0b0dl61_di" bpmnElement="Flow_0b0dl61">
+        <di:waypoint x="998" y="975" />
+        <di:waypoint x="1040" y="975" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1oyunf1_di" bpmnElement="Flow_1oyunf1">
+        <di:waypoint x="1215" y="975" />
+        <di:waypoint x="1230" y="975" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_01io7w6_di" bpmnElement="Flow_01io7w6">
+        <di:waypoint x="1800" y="1020" />
+        <di:waypoint x="1862" y="1020" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jnmixm_di" bpmnElement="Flow_1jnmixm">
+        <di:waypoint x="1140" y="975" />
+        <di:waypoint x="1165" y="975" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0r6x983_di" bpmnElement="Association_0r6x983">
+        <di:waypoint x="674" y="800" />
+        <di:waypoint x="662" y="888" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0kiedq9_di" bpmnElement="TextAnnotation_0kiedq9">
+        <dc:Bounds x="390" y="50" width="280" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1mmpmm0_di" bpmnElement="TextAnnotation_1mmpmm0">
+        <dc:Bounds x="2070" y="50" width="290" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_137tpyo_di" bpmnElement="TextAnnotation_137tpyo">
+        <dc:Bounds x="1650" y="36" width="370" height="55" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0yry1bi_di" bpmnElement="Flow_0yry1bi">
+        <di:waypoint x="870" y="328" />
+        <di:waypoint x="870" y="486" />
+        <di:waypoint x="530" y="486" />
+        <di:waypoint x="530" y="742" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1o0dk57_di" bpmnElement="Flow_1o0dk57">
+        <di:waypoint x="1130" y="778" />
+        <di:waypoint x="1130" y="840" />
+        <di:waypoint x="980" y="840" />
+        <di:waypoint x="980" y="957" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1gj1gfb_di" bpmnElement="Flow_1gj1gfb">
+        <di:waypoint x="1880" y="1002" />
+        <di:waypoint x="1880" y="530" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_08ewazg_di" bpmnElement="Flow_08ewazg">
+        <di:waypoint x="2140" y="578" />
+        <di:waypoint x="2140" y="749" />
+        <di:waypoint x="2210" y="749" />
+        <di:waypoint x="2210" y="920" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1yzgyl3_di" bpmnElement="Flow_1yzgyl3">
+        <di:waypoint x="2230" y="448" />
+        <di:waypoint x="2230" y="594" />
+        <di:waypoint x="2330" y="594" />
+        <di:waypoint x="2330" y="700" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

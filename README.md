@@ -31,7 +31,12 @@
     2. [Belegverbuchung](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-02-Belegverbuchung)
     3. [Zahlungsverkehr](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-03-Zahlungsverkehr)
     
+2. Debitorenbuchhaltung
 
+3. Lohnbuchhaltung
+    1. [Lohnzahlung](./Prozessmodelle/Lohnbuchhaltung/01-soll-lohnzahlung)
+    2. Lohnverbuchung
+    3. Lohnauswertung
 ## An- und Abwesenheit
 
 * Zeiterfassung für Lernbegleitende
