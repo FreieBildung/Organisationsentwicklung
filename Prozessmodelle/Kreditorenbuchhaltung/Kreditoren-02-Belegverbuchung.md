@@ -1,5 +1,5 @@
 # Kreditoren Belegverbuchung
-![Belegverbuchung](./1-soll-belegeingang.png)
+![Belegverbuchung](./2-soll-belegverbuchung.png
 Die BMNL Datei zum Download:
 [Kreditorenbuchhaltung Belegverbuchung](./Kreditoren-02-Belegverbuchung.bpmn)
 

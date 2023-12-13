@@ -29,7 +29,8 @@
 1. Kreditorenbuchhaltung
     1. [Belegeingang](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-01-Belegeingang)
     2. [Belegverbuchung](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-02-Belegverbuchung)
-    3. Zahlungsverkehr
+    3. [Zahlungsverkehr](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-03-Zahlungsverkehr)
+    
 
 ## An- und Abwesenheit
 
