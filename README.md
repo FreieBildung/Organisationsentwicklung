@@ -27,8 +27,8 @@
 ### Finanzverwaltung
 
 1. Kreditorenbuchhaltung
-    1. [Belegeingang](./Prozessmodelle/Kreditoren-01-Belegeingang.bpmn)
-    2. Belegverbuchung
+    1. [Belegeingang](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-01-Belegeingang)
+    2. [Belegverbuchung](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-02-Belegverbuchung)
     3. Zahlungsverkehr
 
 ## An- und Abwesenheit
