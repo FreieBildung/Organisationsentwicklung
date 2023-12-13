@@ -32,11 +32,18 @@
     3. [Zahlungsverkehr](./Prozessmodelle/Kreditorenbuchhaltung/Kreditoren-03-Zahlungsverkehr)
     
 2. Debitorenbuchhaltung
+    1. Elternbeitragsverarbeitung
+        1. [Stammdaten-Abrechnungs-Management](./Prozessmodelle/Debitorenbuchhaltung/Elternbeitragsverarbeitung/1-soll-stammdaten-abrechnungs-zahlungsmethoden-management.md)
+        2. [Lastschriftenauslösung](./Prozessmodelle/Debitorenbuchhaltung/Elternbeitragsverarbeitung/2-soll-lastschriftenauslösung.md)
+        3. [Lastschriftenverbuchung](./Prozessmodelle/Debitorenbuchhaltung/Elternbeitragsverarbeitung/3-soll-lastschriftverbuchung.md)
+    2. [Eingliederungshilfe](./Prozessmodelle/Debitorenbuchhaltung/Eingliederungshilfe/soll-eingliederungshilfe.md)
+    3. [Mahnwesen](./Prozessmodelle/Debitorenbuchhaltung/Mahnwesen/Mahnwesen.md)
 
 3. Lohnbuchhaltung
     1. [Lohnzahlung](./Prozessmodelle/Lohnbuchhaltung/01-soll-lohnzahlung)
-    2. Lohnverbuchung
-    3. Lohnauswertung
+    2. [Lohnverbuchung](./Prozessmodelle/Lohnbuchhaltung/02-soll-lohnverbuchung.md)
+    3. [Lohnauswertung](./Prozessmodelle/Lohnbuchhaltung/03-soll-lohnauswertung.md)
+
 ## An- und Abwesenheit
 
 * Zeiterfassung für Lernbegleitende
