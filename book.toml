@@ -1,0 +1,9 @@
+[book]
+authors = []
+language = "de"
+multilingual = false
+src = "src"
+
+[output.html]
+additional-css = ["css/zoom.css"]
+additional-js = ["camunda.js"]
