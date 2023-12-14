@@ -1,2 +1,8 @@
 # Belegverbuchung
-<script>window.openbpmn('./belegeingang.bpmn')</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+window.openbpmn('./belegverbuchung.bpmn')
+    // Your code or function calls here
+});
+</script>

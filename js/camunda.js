@@ -24,14 +24,52 @@
     // Scripts
     var externalScript1 = document.createElement('script');
     externalScript1.src = 'https://unpkg.com/bpmn-js@16.0.0/dist/bpmn-navigated-viewer.development.js';
-    insertAfter(link3,externalScript1);
+    externalScript1.type = 'text/javascript'
+    externalScript1.onload = function() {
+      console.log(url + ' loaded successfully.');
+      externalScript2 = document.createElement('script');
+      externalScript2.src = 'https://unpkg.com/jquery@3.3.1/dist/jquery.js';
+      externalScript2.type = 'text/javascript'
+      externalScript2.onload = function() {
+        console.log(url + ' loaded successfully.');
+      };
+      insertAfter(externalScript1,externalScript2);
+      };
+      var internalScript = document.createElement('script');
+      internalScript.textContent = `
+      internalScript.type = 'text/javascript'
+      var modeler = new BpmnJS({
+        container: $('#js-canvas'), width:'100%',height:700
+      });
+  
+      window.openbpmn = function openbpmn(url) {
+        $.ajax(url, { dataType : 'text' }).done(async function(xml) {
+          try {
+            await modeler.importXML(xml);
+            modeler.get('canvas').zoom('fit-viewport');
+          } catch (err) {
+            console.error(err);
+          }
+        });
+      }
+      `;
+      internalScript.onload = function() {
+        console.log('modeler get loaded successfully.');
+        window.openbpmn('belegverbuchung.bpmn')
+      };
+      insertAfter(link3,externalScript1);
 	
     externalScript2 = document.createElement('script');
     externalScript2.src = 'https://unpkg.com/jquery@3.3.1/dist/jquery.js';
+    externalScript2.type = 'text/javascript'
+    externalScript2.onload = function() {
+      console.log(url + ' loaded successfully.');
+    };
     insertAfter(externalScript1,externalScript2);
 
     var internalScript = document.createElement('script');
     internalScript.textContent = `
+    internalScript.type = 'text/javascript'
     var modeler = new BpmnJS({
       container: $('#js-canvas'), width:'100%',height:700
     });
@@ -47,6 +85,9 @@
       });
     }
     `;
+    internalScript.onload = function() {
+      console.log('modeler get loaded successfully.');
+    };
 
     // Create the content
     var div = document.createElement('div');
