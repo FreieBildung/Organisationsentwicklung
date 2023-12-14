@@ -1,6 +1,6 @@
 # Inhalt
 
-[Einleitung](README.md)
+[Einleitung](einleitung.md)
 
 # Finanzverwaltung
 
@@ -23,6 +23,6 @@
   - [Lohnauswertung](finanzverwaltung/lohnbuchhaltung/lohnauswertung.md)
 
 ---
-
+[Publikation](it/publikation.md)
 [Beitragende]()
 [Lizenz](lizenz.md)
