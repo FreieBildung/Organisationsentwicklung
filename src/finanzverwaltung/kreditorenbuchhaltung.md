@@ -1,5 +1,5 @@
 # Kreditorenbuchhaltung
 
-* **[Belegeingang](belegeingang.md)**
-* **[Belegverbuchung](belegverbuchung.md)**
-* **[Zahlungsverkehr](zahlungsverkehr.md)**
+* **[Belegeingang](kreditorenbuchhaltung/belegeingang.md)**
+* **[Belegverbuchung](kreditorenbuchhaltung/belegverbuchung.md)**
+* **[Zahlungsverkehr](kreditorenbuchhaltung/zahlungsverkehr.md)**

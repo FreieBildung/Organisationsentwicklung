@@ -1,3 +1,3 @@
 # Debitorenbuchhaltung
 
-* **[Elternbeitragsverwaltung](elternbeitragsverwaltung.md)**
+* **[Elternbeitragsverwaltung](debitorenbuchhaltung/elternbeitragsverwaltung.md)**
