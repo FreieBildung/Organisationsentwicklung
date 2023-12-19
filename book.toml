@@ -5,5 +5,5 @@ multilingual = false
 src = "src"
 
 [output.html]
-additional-js = ["js/camunda.js"]
+#additional-js = ["js/camunda.js"]
 additional-css = ["css/zoom.css"]

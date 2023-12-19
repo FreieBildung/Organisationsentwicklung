@@ -22,7 +22,9 @@
   - [Lohnverbuchung](finanzverwaltung/lohnbuchhaltung/lohnverbuchung.md)
   - [Lohnauswertung](finanzverwaltung/lohnbuchhaltung/lohnauswertung.md)
 
----
-[Publikation](it/publikation.md)
+- [IT](it.md)
+  - [Prozessbilder](it/prozessbilder.md)
+  - [Publikation](it/publikation.md)
+
 [Beitragende]()
 [Lizenz](lizenz.md)
