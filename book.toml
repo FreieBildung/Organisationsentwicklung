@@ -7,3 +7,4 @@ src = "src"
 [output.html]
 #additional-js = ["js/camunda.js"]
 additional-css = ["css/zoom.css"]
+site-url="/Organisationsentwicklung/"
