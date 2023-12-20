@@ -6,9 +6,9 @@
 
 - [Debitorenbuchhaltung](finanzverwaltung/debitorenbuchhaltung.md)
   - [Elternbeitragsverarbeitung](finanzverwaltung/debitorenbuchhaltung/elternbeitragsverwaltung.md)
-  - [Stammdaten-Abrechnungs-Management](finanzverwaltung/debitorenbuchhaltung/stammdaten-abrechnungs-management.md)
-  - [Lastschriftenauslösung](finanzverwaltung/debitorenbuchhaltung/lastschriftenausloesung.md)
-  - [Lastschriftenverbuchung](finanzverwaltung/debitorenbuchhaltung/lastschriftverbuchung.md)
+    - [Stammdaten-Abrechnungs-Management](finanzverwaltung/debitorenbuchhaltung/elternbeitragsverwaltung/stammdaten-abrechnungs-management.md)
+    - [Lastschriftenauslösung](finanzverwaltung/debitorenbuchhaltung/elternbeitragsverwaltung/lastschriftenausloesung.md)
+    - [Lastschriftverbuchung](finanzverwaltung/debitorenbuchhaltung/elternbeitragsverwaltung/lastschriftverbuchung.md)
   - [Eingliederungshilfe](finanzverwaltung/debitorenbuchhaltung/eingliederungshilfe.md)
   - [Mahnwesen](finanzverwaltung/debitorenbuchhaltung/mahnwesen.md)
   
