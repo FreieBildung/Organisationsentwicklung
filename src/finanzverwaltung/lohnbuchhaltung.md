@@ -1,5 +1,5 @@
 # Lohnbuchhaltung
 
-* **[Lohnauswertung](lohnbuchhaltung/lohnauswertung.md)**
-* **[Lohnverbuchung](lohnbuchhaltung/lohnverbuchung.md)**
 * **[Lohnzahlung](lohnbuchhaltung/lohnzahlung.md)**
+* **[Lohnverbuchung](lohnbuchhaltung/lohnverbuchung.md)**
+* **[Lohnauswertung](lohnbuchhaltung/lohnauswertung.md)**
