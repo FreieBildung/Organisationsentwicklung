@@ -22,7 +22,7 @@ jobs:
         with:
           branch: main
           repository: FreieBildung.github.io
-          token: ${{ secrets.GITTOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       - deployment
       - pull_request_review
