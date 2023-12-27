@@ -1,0 +1,31 @@
+name: Deploy to Production
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build and test
+        run: |
+          # Add commands to build and test your website release
+          ls
+      - name: Deploy to Production
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main
+          repository: FreieBildung.github.io
+          token: ${{ secrets.GITTOKEN }}
+    permissions:
+      environment:
+        production:
+          - deployment
+          - pull_request_review
+
