@@ -30,7 +30,7 @@ jobs:
           # This assumes your book is in the root of your repository.
           # Just add a `cd` here if you need to change to another directory.
           mdbook build
-
+          echo "www.servicenetzwerk-freie-bildung.de" > CNAME
       - name: Deploy to Production
         uses: ad-m/github-push-action@master
         with:
