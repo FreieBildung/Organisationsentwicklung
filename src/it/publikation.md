@@ -8,7 +8,6 @@ Zum Schreiben und schnellen Testen kann die Erzeugung auch lokal auf dem PC durc
 
 ![wie das Buch entsteht](publizieren.png)
 
-
 ## Lebenszyklus-Prozess der Dokumentation
 
 ### Schreiben
