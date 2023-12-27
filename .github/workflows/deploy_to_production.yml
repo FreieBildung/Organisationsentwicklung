@@ -12,7 +12,7 @@ jobs:
     environment: production
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Build and test
         run: |
           # Add commands to build and test your website release
@@ -22,7 +22,7 @@ jobs:
         with:
           branch: main
           repository: FreieBildung.github.io
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       deployments: write
       pull-requests: write
