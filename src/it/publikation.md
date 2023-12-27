@@ -23,3 +23,4 @@ Ein Redakteur kann durch einen Pull-Request die letzten Änderungen von *develop
 Wenn die Änderungen auf der Testseite zufriedenstellend sind, kann der verantwortliche Redakteur die Seite auf die offizielle Website übernehmen. Dies erfolgt mit...
 
 https://github.com/FreieBildung/Organisationsentwicklung/compare/staging...develop
+
