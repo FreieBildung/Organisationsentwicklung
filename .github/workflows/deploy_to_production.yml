@@ -28,3 +28,5 @@ jobs:
       deployments: write
       pull-requests: write
       pages: write
+
+      
