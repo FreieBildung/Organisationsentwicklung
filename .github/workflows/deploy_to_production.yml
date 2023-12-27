@@ -32,13 +32,13 @@ jobs:
           mdbook build
 
       - name: Deploy to Production
-          uses: ad-m/github-push-action@master
-          with:
-            repository: FreieBildung/FreieBildung.github.io
-            branch: main
-            force: true
-            directory: ./book
-            github_token: ${{ secrets.GITTOKEN }}
+        uses: ad-m/github-push-action@master
+        with:
+          repository: FreieBildung/FreieBildung.github.io
+          branch: main
+          force: true
+          directory: ./book
+          github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
       pull-requests: write
