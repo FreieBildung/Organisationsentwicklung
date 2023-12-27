@@ -36,7 +36,7 @@ jobs:
         uses: GuillaumeFalourd/git-commit-push@v1.3
         with:
           target_branch: main
-          directory: ./book
+          files: ./book
           remote_repository: https://github.com/FreieBildung/FreieBildung.github.io
           access_token: ${{ secrets.GITTOKEN }}
           force: true
@@ -47,7 +47,7 @@ jobs:
 #       repository: FreieBildung/FreieBildung.github.io
 #       branch: main
 #       force: true
-#       files: ./book
+#       directory: ./book
 #       github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
