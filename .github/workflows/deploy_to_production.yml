@@ -37,7 +37,7 @@ jobs:
           branch: main
           force: true
           directory: ./book
-          github_token: ${{ secrets.GITTOKEN }}
+          token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
       pull-requests: write
