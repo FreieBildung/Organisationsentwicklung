@@ -34,11 +34,11 @@ jobs:
       - name: Deploy to Production
           uses: ad-m/github-push-action@master
           with:
-          repository: FreieBildung/FreieBildung.github.io
-          branch: main
-          force: true
-          directory: ./book
-          github_token: ${{ secrets.GITTOKEN }}
+            repository: FreieBildung/FreieBildung.github.io
+            branch: main
+            force: true
+            directory: ./book
+            github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
       pull-requests: write
