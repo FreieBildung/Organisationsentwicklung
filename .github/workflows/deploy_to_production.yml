@@ -23,7 +23,7 @@ jobs:
         with:
           repository: FreieBildung/FreieBildung.github.io
           branch: gh-pages
-          github_token: ${{ secrets.GITTOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       deployments: write
       pull-requests: write
