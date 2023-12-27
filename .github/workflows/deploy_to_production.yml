@@ -19,9 +19,8 @@ jobs:
           ls
           echo ">>> ${{ secrets.GITTOKEN }}"
       - name: Deploy to Production
-        uses: ad-m/github-push-action
+        uses: ad-m/github-push-action@main
         with:
-          branch: main
           repository: FreieBildung/FreieBildung.github.io
           github_token: ${{ secrets.GITTOKEN }}
     permissions:
