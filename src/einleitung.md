@@ -1,4 +1,4 @@
 # Einleitung
 
-Hier geht es los.
+Hier geht es los!
 
