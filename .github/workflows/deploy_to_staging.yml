@@ -1,9 +1,8 @@
 name: Deploy
 on:
-  release:
-    types: [created]
+  push:
     branches:
-      - publish
+      - staging
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -34,6 +33,13 @@ jobs:
         with:
           # Upload entire repository
           path: 'book'
+#      - name: Deploy to GitHub Pages
+#        id: deployment
+#        uses: actions/deploy-pages@v1
+
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book  # Replace with your build directory
