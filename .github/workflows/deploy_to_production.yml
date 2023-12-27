@@ -24,5 +24,6 @@ jobs:
           repository: FreieBildung.github.io
           token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
-      deployment: write
-      pull_request_review: write
+      deployments: write
+      pull_requests: write
+      pages: write
