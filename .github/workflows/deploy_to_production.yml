@@ -17,6 +17,7 @@ jobs:
         run: |
           # Add commands to build and test your website release
           ls
+          echo ">>> ${{ secrets.GITTOKEN }}"
       - name: Deploy to Production
         uses: ad-m/github-push-action@master
         with:
