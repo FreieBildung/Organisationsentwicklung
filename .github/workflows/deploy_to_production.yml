@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to Production
         uses: ad-m/github-push-action@master
         with:
-          repository: FreieBildung/FreieBildung.github.io
+          repository: FreieBildung.github.io
           branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
