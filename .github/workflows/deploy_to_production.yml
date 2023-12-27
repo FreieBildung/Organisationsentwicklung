@@ -17,13 +17,14 @@ jobs:
         run: |
           # Add commands to build and test your website release
           ls
-          echo ">>> ${{ secrets.GITTOKEN }}"
       - name: Deploy to Production
         uses: ad-m/github-push-action@master
         with:
-          repository: FreieBildung.github.io
+          repository: FreieBildung/FreieBildung.github.io
           branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+          directory: ./book
+          github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
       pull-requests: write
