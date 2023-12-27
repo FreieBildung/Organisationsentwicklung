@@ -21,7 +21,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           branch: main
-          repository: FreieBildung.github.io
+          repository: FreieBildung/FreieBildung.github.io
           github_token: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       deployments: write
