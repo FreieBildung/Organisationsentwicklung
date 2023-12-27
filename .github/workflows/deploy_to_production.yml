@@ -31,24 +31,14 @@ jobs:
           # Just add a `cd` here if you need to change to another directory.
           mdbook build
 
-    
-      - name: Deploy to Prod
-        uses: GuillaumeFalourd/git-commit-push@v1.3
-        with:
-          target_branch: main
-          files: ./book
-          remote_repository: https://github.com/FreieBildung/FreieBildung.github.io
-          access_token: ${{ secrets.GITTOKEN }}
+      - name: Deploy to Production
+          uses: ad-m/github-push-action@master
+          with:
+          repository: FreieBildung/FreieBildung.github.io
+          branch: main
           force: true
-
-#   - name: Deploy to Production
-#     uses: ad-m/github-push-action@master
-#     with:
-#       repository: FreieBildung/FreieBildung.github.io
-#       branch: main
-#       force: true
-#       directory: ./book
-#       github_token: ${{ secrets.GITTOKEN }}
+          directory: ./book
+          github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
       pull-requests: write
