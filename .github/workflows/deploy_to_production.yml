@@ -14,8 +14,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITTOKEN }}
-
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of the personal access token.
+          fetch-depth: 0  # otherwise, there would be errors pushing refs to the destination repository.
+  
       - name: Install latest mdbook
         run: |
           tag=$(curl 'https://api.github.com/repos/rust-lang/mdbook/releases/latest' | jq -r '.tag_name')
@@ -46,7 +47,7 @@ jobs:
 #       repository: FreieBildung/FreieBildung.github.io
 #       branch: main
 #       force: true
-#       directory: ./book
+#       files: ./book
 #       github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
