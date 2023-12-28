@@ -25,7 +25,8 @@ jobs:
         run: |
           # This assumes your book is in the root of your repository.
           # Just add a `cd` here if you need to change to another directory.
-          export MDBOOK_site_url="/Organisationsentwicklung/"
+          export MDBOOK_output__html__site_url="/Organisationsentwicklung/"
+          env
           mdbook build
       - name: Setup Pages
         uses: actions/configure-pages@v2
