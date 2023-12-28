@@ -123,7 +123,44 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <style>
+                .myheader {
+                    margin-top: 55px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .mylogo {
+                    height: 60px;
+                }
+                .myimage {
+                    max-height: 90%;
+                    width: auto;
+                    object-fit: contain;
+                }
+                .mytitle {
+                    margin-top: -5px;
+                    text: align-center;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: #A35000;
+                }
+                #menu-bar-hover-placeholder {
+                    display:none;
+                }
+                </style>
+                <div class="myheader">
+                    <div class="mylogo">
+                        <img src="/it/assets/logo.png" class="myimage"/>
+                    </div>
+                    <div class="mytitle">
+                        Servicenetzwerk Freie Bildung
+                    </div>
+                </div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">

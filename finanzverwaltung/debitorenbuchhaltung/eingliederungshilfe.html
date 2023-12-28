@@ -123,7 +123,44 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <style>
+                .myheader {
+                    margin-top: 55px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .mylogo {
+                    height: 60px;
+                }
+                .myimage {
+                    max-height: 90%;
+                    width: auto;
+                    object-fit: contain;
+                }
+                .mytitle {
+                    margin-top: -5px;
+                    text: align-center;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: #A35000;
+                }
+                #menu-bar-hover-placeholder {
+                    display:none;
+                }
+                </style>
+                <div class="myheader">
+                    <div class="mylogo">
+                        <img src="/it/assets/logo.png" class="myimage"/>
+                    </div>
+                    <div class="mytitle">
+                        Servicenetzwerk Freie Bildung
+                    </div>
+                </div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -215,8 +252,10 @@
 </ul>
 <h3 id="prozessfehler"><a class="header" href="#prozessfehler">Prozessfehler</a></h3>
 <ul>
-<li>Stichtage überschritten: Der Teilnehmer und die Verwaltung erhalten eine Benachrichtigung mit der Bitte um dringende Erledigung.</li>
-<li>Fehlzustellungen an Prozessteilnehmer oder Externe: Nach Rücklauf und Datenkorrektur erneutes Ausführen der fehlerhaften Schritte.</li>
+<li>Stichtage überschritten: Der Teilnehmer und die Verwaltung erhalten eine Benachrichtigung mit der Bitte um dringende Erledigung. Bei Überschreitung der Buchungsstichtage Abrechnung im Folgemonat.</li>
+<li>Fehlzustellungen an Prozessteilnehmer: Nach Rücklauf und Datenkorrektur erneutes Ausführen der fehlerhaften Schritte.</li>
+<li>Fehlerhaft gestellte Ausgangsrechnung: buchhalterische Auflösung / Korrektur ohne erneuten Prozessdurchlauf.</li>
+<li>Fehlerhaft durchgeführte DATEV-Buchung: buchhalterische Auflösung / Korrektur ohne erneuten Prozessdurchlauf.</li>
 </ul>
 <h3 id="prozesskennzahlen"><a class="header" href="#prozesskennzahlen">Prozesskennzahlen</a></h3>
 <ul>
@@ -226,6 +265,8 @@
 <li>Einhaltungsquote des Abrechnungsstichtags</li>
 <li>Einhaltungsquote des Buchungsstichtags </li>
 <li>Einhaltungsquote des Versandstichtags </li>
+<li>Quote fehlerhafter Rechnungsstellungen</li>
+<li>Quote Fehlbuchungen</li>
 </ul>
 <h3 id="prozessartefakte"><a class="header" href="#prozessartefakte">Prozessartefakte</a></h3>
 <ul>

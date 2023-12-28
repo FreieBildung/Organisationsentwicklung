@@ -123,7 +123,44 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <style>
+                .myheader {
+                    margin-top: 55px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .mylogo {
+                    height: 60px;
+                }
+                .myimage {
+                    max-height: 90%;
+                    width: auto;
+                    object-fit: contain;
+                }
+                .mytitle {
+                    margin-top: -5px;
+                    text: align-center;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: #A35000;
+                }
+                #menu-bar-hover-placeholder {
+                    display:none;
+                }
+                </style>
+                <div class="myheader">
+                    <div class="mylogo">
+                        <img src="/it/assets/logo.png" class="myimage"/>
+                    </div>
+                    <div class="mytitle">
+                        Servicenetzwerk Freie Bildung
+                    </div>
+                </div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -199,17 +236,11 @@
 </ul>
 <h3 id="regelungen"><a class="header" href="#regelungen">Regelungen</a></h3>
 <ul>
-<li>Abrechnungsstichtag: der 1. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
-<li>Buchungsstichtag: der 10. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
-<li>Versandstichtag: der 15. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
-<li>Das Servicenetzwerk erstellt Kennzahlen zur Fristeneinhaltung und zur Prozesshistorie.</li>
-<li>Die Buchhaltungsregeln für die Ausgangsrechnungsbuchung.</li>
+<li>Organisatorische Festlegung, wer wann vor der Publikation prüft.</li>
 </ul>
 <h3 id="voraussetzungen"><a class="header" href="#voraussetzungen">Voraussetzungen</a></h3>
 <ul>
-<li>Kostenträger pro Integrationshelfer bekannt</li>
-<li>Integrationshelfer haben Zugriff auf Erfassungssoftware (ELO oder anderes Formular)</li>
-<li>Die Prozessteilnehmer agieren in einer Rolle und haben jeweils Vertreter, die die Augaben fristgerecht übernehmen können.</li>
+<li>Prozessteilnehmer haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.</li>
 </ul>
 <h3 id="prozessfehler"><a class="header" href="#prozessfehler">Prozessfehler</a></h3>
 <p>Prozessfehler führen zu einem gescheiterten Workflow oder einem unerwünschten Ergebnis auf der Website.
@@ -232,6 +263,7 @@ Die Prozessfehler können auf der <a href="https://github.com/FreieBildung/Organ
 <h4 id="Übersicht-über-den-publikationsprozess"><a class="header" href="#Übersicht-über-den-publikationsprozess">Übersicht über den Publikationsprozess</a></h4>
 <p><img src="staging.png" alt="Übersicht über den Publikationsprozess" /></p>
 <h4 id="technischer-ablauf-im-detail"><a class="header" href="#technischer-ablauf-im-detail">Technischer Ablauf im Detail</a></h4>
+<p>Darstellung vereinfacht für die Erstellung der Staging-Umgebung.</p>
 <p><img src="publizieren.png" alt="wie das Buch entsteht" /></p>
 
                     </main>

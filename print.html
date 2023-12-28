@@ -124,7 +124,44 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <style>
+                .myheader {
+                    margin-top: 55px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .mylogo {
+                    height: 60px;
+                }
+                .myimage {
+                    max-height: 90%;
+                    width: auto;
+                    object-fit: contain;
+                }
+                .mytitle {
+                    margin-top: -5px;
+                    text: align-center;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 26px;
+                    color: #A35000;
+                }
+                #menu-bar-hover-placeholder {
+                    display:none;
+                }
+                </style>
+                <div class="myheader">
+                    <div class="mylogo">
+                        <img src="/it/assets/logo.png" class="myimage"/>
+                    </div>
+                    <div class="mytitle">
+                        Servicenetzwerk Freie Bildung
+                    </div>
+                </div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -178,7 +215,20 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="einleitung"><a class="header" href="#einleitung">Einleitung</a></h1>
-<p>Die vom Servicenetzwerk unterstützten Abläufe sind über das Menü links erreichbar.</p>
+<p>Die vom Servicenetzwerk unterstützten Abläufe sind über das Menü links erreichbar. Momentan liegt der Fokus auf den Buchhaltungsprozessen, die für die teilnehmenden Schulen essenziell sind.</p>
+<p>Weitere Prozesse folgen, u.a.</p>
+<h2 id="servicenetzwerk"><a class="header" href="#servicenetzwerk">Servicenetzwerk</a></h2>
+<ul>
+<li>Aufnahme einer weiteren Schule</li>
+<li>Einführung neuer Leistungsangebote</li>
+<li>Training</li>
+<li>Informationskonzept</li>
+</ul>
+<h2 id="it"><a class="header" href="#it">IT</a></h2>
+<ul>
+<li>Automatisierung von Abläufen</li>
+<li>Sicherheitsprozesse</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="finanzverwaltung"><a class="header" href="#finanzverwaltung">Finanzverwaltung</a></h1>
 <ul>
 <li><strong><a href="finanzverwaltung/debitorenbuchhaltung.html">Debitorenbuchhaltung</a></strong></li>
@@ -266,8 +316,10 @@ openFromUrl('./lastschriftverbuchung.bpmn');
 </ul>
 <h3 id="prozessfehler"><a class="header" href="#prozessfehler">Prozessfehler</a></h3>
 <ul>
-<li>Stichtage überschritten: Der Teilnehmer und die Verwaltung erhalten eine Benachrichtigung mit der Bitte um dringende Erledigung.</li>
-<li>Fehlzustellungen an Prozessteilnehmer oder Externe: Nach Rücklauf und Datenkorrektur erneutes Ausführen der fehlerhaften Schritte.</li>
+<li>Stichtage überschritten: Der Teilnehmer und die Verwaltung erhalten eine Benachrichtigung mit der Bitte um dringende Erledigung. Bei Überschreitung der Buchungsstichtage Abrechnung im Folgemonat.</li>
+<li>Fehlzustellungen an Prozessteilnehmer: Nach Rücklauf und Datenkorrektur erneutes Ausführen der fehlerhaften Schritte.</li>
+<li>Fehlerhaft gestellte Ausgangsrechnung: buchhalterische Auflösung / Korrektur ohne erneuten Prozessdurchlauf.</li>
+<li>Fehlerhaft durchgeführte DATEV-Buchung: buchhalterische Auflösung / Korrektur ohne erneuten Prozessdurchlauf.</li>
 </ul>
 <h3 id="prozesskennzahlen"><a class="header" href="#prozesskennzahlen">Prozesskennzahlen</a></h3>
 <ul>
@@ -277,6 +329,8 @@ openFromUrl('./lastschriftverbuchung.bpmn');
 <li>Einhaltungsquote des Abrechnungsstichtags</li>
 <li>Einhaltungsquote des Buchungsstichtags </li>
 <li>Einhaltungsquote des Versandstichtags </li>
+<li>Quote fehlerhafter Rechnungsstellungen</li>
+<li>Quote Fehlbuchungen</li>
 </ul>
 <h3 id="prozessartefakte"><a class="header" href="#prozessartefakte">Prozessartefakte</a></h3>
 <ul>
@@ -525,7 +579,7 @@ Das ist ein Text nach dem Diagramm.
 </ul>
 </li>
 </ul>
-<h3 id="it"><a class="header" href="#it">IT</a></h3>
+<h3 id="it-1"><a class="header" href="#it-1">IT</a></h3>
 <ul>
 <li>IT Management</li>
 <li>Datenschutz</li>
@@ -665,17 +719,11 @@ Nachweis Erweitertes Polizeiliches Führungszeugnis (wenn nicht bereits durch an
 </ul>
 <h3 id="regelungen-1"><a class="header" href="#regelungen-1">Regelungen</a></h3>
 <ul>
-<li>Abrechnungsstichtag: der 1. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
-<li>Buchungsstichtag: der 10. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
-<li>Versandstichtag: der 15. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
-<li>Das Servicenetzwerk erstellt Kennzahlen zur Fristeneinhaltung und zur Prozesshistorie.</li>
-<li>Die Buchhaltungsregeln für die Ausgangsrechnungsbuchung.</li>
+<li>Organisatorische Festlegung, wer wann vor der Publikation prüft.</li>
 </ul>
 <h3 id="voraussetzungen-1"><a class="header" href="#voraussetzungen-1">Voraussetzungen</a></h3>
 <ul>
-<li>Kostenträger pro Integrationshelfer bekannt</li>
-<li>Integrationshelfer haben Zugriff auf Erfassungssoftware (ELO oder anderes Formular)</li>
-<li>Die Prozessteilnehmer agieren in einer Rolle und haben jeweils Vertreter, die die Augaben fristgerecht übernehmen können.</li>
+<li>Prozessteilnehmer haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.</li>
 </ul>
 <h3 id="prozessfehler-1"><a class="header" href="#prozessfehler-1">Prozessfehler</a></h3>
 <p>Prozessfehler führen zu einem gescheiterten Workflow oder einem unerwünschten Ergebnis auf der Website.
@@ -698,6 +746,7 @@ Die Prozessfehler können auf der <a href="https://github.com/FreieBildung/Organ
 <h4 id="Übersicht-über-den-publikationsprozess"><a class="header" href="#Übersicht-über-den-publikationsprozess">Übersicht über den Publikationsprozess</a></h4>
 <p><img src="it/informationsmanagement/staging.png" alt="Übersicht über den Publikationsprozess" /></p>
 <h4 id="technischer-ablauf-im-detail"><a class="header" href="#technischer-ablauf-im-detail">Technischer Ablauf im Detail</a></h4>
+<p>Darstellung vereinfacht für die Erstellung der Staging-Umgebung.</p>
 <p><img src="it/informationsmanagement/publizieren.png" alt="wie das Buch entsteht" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lizenz"><a class="header" href="#lizenz">Lizenz</a></h1>
 <h2 id="creative-commons-legal-code"><a class="header" href="#creative-commons-legal-code">Creative Commons Legal Code</a></h2>
