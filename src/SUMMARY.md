@@ -21,11 +21,11 @@
     - [Lohnverbuchung](finanzverwaltung/lohnbuchhaltung/lohnverbuchung.md)
     - [Lohnauswertung](finanzverwaltung/lohnbuchhaltung/lohnauswertung.md)
 
-- [IT](it.md)
-  - Prozessunterstützung
-    - [Prozessbilder](it/prozessbilder.md)
-  - Informationsmanagement
-    - [Publikation](it/publikation.md)
+- [Information und Kommunukation](it.md)
+  - [Prozessunterstützung](it/prozessunterstuetzung.md)
+    - [Darstellung der Prozessdiagramme](it/prozessunterstuetzung/prozessbilder.md)
+  - [Informationsmanagement](it/informationsmanagement.md)
+    - [Publikation](it/informationsmanagement/publikation.md)
 
 [Beitragende]()
 [Lizenz](lizenz.md)
