@@ -1,9 +1,6 @@
 # Einleitung
 
-
-Hier geht es los!
-
-# Organisationsentwicklung
+Übersicht über die Prozesse einer Schule. Die vom Servicenetzwerk unterstützten Abläufe sind über das Menü links erreichbar.
 
 # Beteiligte
 * GeschäftsführerIn
