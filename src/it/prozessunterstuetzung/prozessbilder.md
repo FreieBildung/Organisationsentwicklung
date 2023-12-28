@@ -1,4 +1,4 @@
-# Prozessbilder
+# Darstellung der Prozessdiagramme
 
 Da die eingestellten Prozessdiagramme teilweise sehr umfangreich sind, benötigen wir eine Zoom-Funktion. Die einfachste Weise ist, den Camunda Modeler in einer Read-Only-ansicht einzubinden. Im Diagramm kann man dann mit Strg + Mausrad zoomen. 
 
