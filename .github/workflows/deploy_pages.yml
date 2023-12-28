@@ -32,7 +32,7 @@ jobs:
               personal_token: ${{ secrets.GITTOKEN }}
               external_repository: FreieBildung/FreieBildung.github.io
               publish_dir: ./book
-              keep_files: true
+              keep_files: false
               user_name: servicenetzwerk-freie-bildung
               user_email: info@servicenetzwerk-freie-bildung.de
               publish_branch: main
