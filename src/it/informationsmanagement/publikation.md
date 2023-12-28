@@ -31,9 +31,7 @@ Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert
 
 ### Voraussetzungen
 
-* Kostenträger pro Integrationshelfer bekannt
-* Integrationshelfer haben Zugriff auf Erfassungssoftware (ELO oder anderes Formular)
-* Die Prozessteilnehmer agieren in einer Rolle und haben jeweils Vertreter, die die Augaben fristgerecht übernehmen können.
+* Prozessteilnehmer haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.
 
 ### Prozessfehler
 
