@@ -35,3 +35,4 @@ jobs:
               user_email: info@servicenetzwerk-freie-bildung.de
               publish_branch: main
               cname: www.servicenetzwerk-freie-bildung.de
+              
