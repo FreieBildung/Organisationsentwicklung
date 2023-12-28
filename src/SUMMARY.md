@@ -23,7 +23,10 @@
 
 - [Information und Kommunikation](it.md)
   - [Prozessunterstützung](it/prozessunterstuetzung.md)
+    - [Darstellung der Prozessdiagramme](it/prozessunterstuetzung/prozessbilder.md)
+    - [Weitere Schulprozesse](it/prozessunterstuetzung/weitere-schulprozesse.md)
   - [Informationsmanagement](it/informationsmanagement.md)
+    - [Publikation](it/informationsmanagement/publikation.md)
 
 [Beitragende]()
 [Lizenz](lizenz.md)
