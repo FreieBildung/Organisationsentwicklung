@@ -30,15 +30,16 @@ jobs:
           # This assumes your book is in the root of your repository.
           # Just add a `cd` here if you need to change to another directory.
           mdbook build
+          cd book
           echo "www.servicenetzwerk-freie-bildung.de" > CNAME
-          ls
+          
       - name: Deploy to Production
         uses: ad-m/github-push-action@master
         with:
           repository: FreieBildung/FreieBildung.github.io
           branch: main
           force: true
-          directory: ./book
+          directory: book
           github_token: ${{ secrets.GITTOKEN }}
     permissions:
       deployments: write
