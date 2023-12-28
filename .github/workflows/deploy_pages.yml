@@ -1,6 +1,7 @@
 name: Deploy to Production Pages
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch
 
 jobs:
   deploy:
@@ -35,4 +36,3 @@ jobs:
               user_email: info@servicenetzwerk-freie-bildung.de
               publish_branch: main
               cname: www.servicenetzwerk-freie-bildung.de
-              
