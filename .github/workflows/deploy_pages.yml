@@ -1,0 +1,38 @@
+name: Deploy to Production Pages
+
+on: 
+  workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+#    environment: production
+    steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          with:
+            persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of the personal access token.
+            fetch-depth: 0  # otherwise, there would be errors pushing refs to the destination repository.
+        - name: Setup mdbook
+          run: |
+            tag=$(curl 'https://api.github.com/repos/rust-lang/mdbook/releases/latest' | jq -r '.tag_name')
+            url="https://github.com/rust-lang/mdbook/releases/download/${tag}/mdbook-${tag}-x86_64-unknown-linux-gnu.tar.gz"
+            mkdir mdbook
+            curl -sSL $url | tar -xz --directory=./mdbook
+            echo `pwd`/mdbook >> $GITHUB_PATH
+
+        - name: Build Book
+          run: |
+            mdbook build
+
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+              personal_token: ${{ secrets.GITTOKEN }}
+              external_repository: FreieBildung/FreieBildung.github.io
+              publish_dir: ./book
+              keep_files: true
+              user_name: servicenetzwerk-freie-bildung
+              user_email: info@servicenetzwerk-freie-bildung.de
+              publish_branch: main
+              cname: www.servicenetzwerk-freie-bildung.de

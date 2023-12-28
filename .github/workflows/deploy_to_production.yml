@@ -1,0 +1,48 @@
+name: Deploy to Production
+
+on:
+  pull_request:
+    branches:
+      - stagingx
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of the personal access token.
+          fetch-depth: 0  # otherwise, there would be errors pushing refs to the destination repository.
+  
+      - name: Install latest mdbook
+        run: |
+          tag=$(curl 'https://api.github.com/repos/rust-lang/mdbook/releases/latest' | jq -r '.tag_name')
+          url="https://github.com/rust-lang/mdbook/releases/download/${tag}/mdbook-${tag}-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir mdbook
+          curl -sSL $url | tar -xz --directory=./mdbook
+          echo `pwd`/mdbook >> $GITHUB_PATH
+
+      - name: Build Book
+        run: |
+          # This assumes your book is in the root of your repository.
+          # Just add a `cd` here if you need to change to another directory.
+          mdbook build
+          cd book
+          echo "www.servicenetzwerk-freie-bildung.de" > CNAME
+          
+      - name: Deploy to Production
+        uses: ad-m/github-push-action@master
+        with:
+          repository: FreieBildung/FreieBildung.github.io
+          branch: main
+          force: true
+          directory: book
+          github_token: ${{ secrets.GITTOKEN }}
+    permissions:
+      deployments: write
+      pull-requests: write
+      pages: write
+      contents: write
+
