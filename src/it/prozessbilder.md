@@ -10,8 +10,9 @@ Beispiel für eine Seite mit camunda-Code:
 
 Das ist ein Text vor dem Diagramm.
 
-## Prozessablauf
+### Prozessablauf
 
+<style>#js-canvas { background-color: #eeeeee; } </style>
 <div class="canvas"><div id="js-canvas"></div></div>
 <script>
     var modeler = new BpmnJS({container: $('#js-canvas'), width:'100%',height:500 });
@@ -29,8 +30,9 @@ ergibt:
 
 Das ist ein Text vor dem Diagramm.
 
-## Prozessablauf
+### Prozessablauf
 
+<style>#js-canvas { background-color: #eeeeee; } </style>
 <div class="canvas"><div id="js-canvas"></div></div>
 <script>
     var modeler = new BpmnJS({container: $('#js-canvas'), width:'100%',height:500 });
