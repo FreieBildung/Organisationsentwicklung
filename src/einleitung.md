@@ -2,8 +2,6 @@
 
 Übersicht über die Prozesse einer Schule. Die vom Servicenetzwerk unterstützten Abläufe sind über das Menü links erreichbar.
 
-# Organisationsentwicklung
-
 # Beteiligte
 * GeschäftsführerIn
 * DirektorIn/SchulleiterIn
