@@ -35,8 +35,11 @@
 
 ### Prozessfehler
 
-* Stichtage überschritten: Der Teilnehmer und die Verwaltung erhalten eine Benachrichtigung mit der Bitte um dringende Erledigung.
-* Fehlzustellungen an Prozessteilnehmer oder Externe: Nach Rücklauf und Datenkorrektur erneutes Ausführen der fehlerhaften Schritte.
+* Stichtage überschritten: Der Teilnehmer und die Verwaltung erhalten eine Benachrichtigung mit der Bitte um dringende Erledigung. Bei Überschreitung der Buchungsstichtage Abrechnung im Folgemonat.
+* Fehlzustellungen an Prozessteilnehmer: Nach Rücklauf und Datenkorrektur erneutes Ausführen der fehlerhaften Schritte.
+* Fehlerhaft gestellte Ausgangsrechnung: buchhalterische Auflösung / Korrektur ohne erneuten Prozessdurchlauf.
+* Fehlerhaft durchgeführte DATEV-Buchung: buchhalterische Auflösung / Korrektur ohne erneuten Prozessdurchlauf.
+
 
 ### Prozesskennzahlen
 
@@ -46,6 +49,8 @@
 * Einhaltungsquote des Abrechnungsstichtags
 * Einhaltungsquote des Buchungsstichtags 
 * Einhaltungsquote des Versandstichtags 
+* Quote fehlerhafter Rechnungsstellungen
+* Quote Fehlbuchungen
 
 ### Prozessartefakte
 
