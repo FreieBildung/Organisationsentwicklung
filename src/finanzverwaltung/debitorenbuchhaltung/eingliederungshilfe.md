@@ -7,8 +7,8 @@
 ## Der ideale Prozess
 ### Ablauf
 * Zu jedem Monatsanfang stellt die Verwaltung die Abrechnungstabelle für jede Integrationshelferin in ELO bereit.
-* Zum Abrechnungsstichtag am Monatsende füllt jede Integrationshelferin die Abrechnungstabelle mit den geleisteten Arbeitsstunden aus. Wenn alle Einträge erfolgt sind, die Integrationshelferin die Tabelle zur Prüfung freigeben.
-* Die Schulleitung erhält für jede zur Prüfung freigegebene Tabelle eine Benachrichtigung.
+* Zum Abrechnungsstichtag am Monatsende füllt jede Integrationshelferin die Abrechnungstabelle mit den geleisteten Arbeitsstunden aus. Wenn alle Einträge erfolgt sind, muss die Integrationshelferin die Tabelle zur Prüfung übergeben.
+* Die Schulleitung erhält für jede zur Prüfung übergegebene Tabelle eine Benachrichtigung.
 * Die Schulleitung stellt die Korrektheit und Vollständigkeit der Abrechnung fest. 
   * Sofern eine Abrechnung Fehler aufweist, geht sie zurück an die betroffene Integrationshelferin zur Klärung bzw. Korrektur. 
 * Die Schulleitung gibt die Abrechnung zur Buchung bis zum Buchungsstichtag frei.
@@ -38,7 +38,6 @@
 * DATEV-Buchungssatz
 ### Prozessablauf
 <div class="canvas"><div id="js-canvas"></div></div>
-<style> #js-canvas { background-color: #eeeeee; } </style>
 <script>
     var modeler = new BpmnJS({container: $('#js-canvas'), width:'100%',height:800 });
     function openFromUrl(url) { $.ajax(url, { dataType : 'text' }).done(async function(xml) {

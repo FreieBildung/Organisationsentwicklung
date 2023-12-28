@@ -18,3 +18,8 @@
 :root {
 	--content-max-width: 88%!important;
 }
+
+/* Hintergrund für Camunda Viewer */
+#js-canvas { 
+    background-color: #eeeeee; 
+}
