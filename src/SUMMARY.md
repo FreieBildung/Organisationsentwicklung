@@ -22,8 +22,10 @@
     - [Lohnauswertung](finanzverwaltung/lohnbuchhaltung/lohnauswertung.md)
 
 - [IT](it.md)
-  - [Prozessbilder](it/prozessbilder.md)
-  - [Publikation](it/publikation.md)
+  - Prozessunterstützung
+    - [Prozessbilder](it/prozessbilder.md)
+  - Informationsmanagement
+    - [Publikation](it/publikation.md)
 
 [Beitragende]()
 [Lizenz](lizenz.md)

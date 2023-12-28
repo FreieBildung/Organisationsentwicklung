@@ -55,7 +55,7 @@
       <bpmn:incoming>Flow_1ukvbm8</bpmn:incoming>
       <bpmn:messageEventDefinition id="MessageEventDefinition_1ve28bp" />
     </bpmn:endEvent>
-    <bpmn:startEvent id="Event_086lq95" name="Abrechnungs-tabelle ausfüllen / korrigieren">
+    <bpmn:startEvent id="Event_086lq95" name="Abrechnungs-tabelle auszufüllen / zu korrigieren">
       <bpmn:outgoing>Flow_0z4gvwm</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_1xe8787" />
     </bpmn:startEvent>
@@ -83,7 +83,7 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_1xp1pl4" name="Nein" sourceRef="Gateway_1j430xg" targetRef="Event_0ftigx8" />
     <bpmn:sequenceFlow id="Flow_11uy0qi" name="Ja" sourceRef="Gateway_1j430xg" targetRef="Event_01cgx8x" />
-    <bpmn:startEvent id="Event_1ontiz7" name="Abrechnung freigeben">
+    <bpmn:startEvent id="Event_1ontiz7" name="Abrechnung freizugeben">
       <bpmn:outgoing>Flow_116ty7i</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_006hxco" />
     </bpmn:startEvent>
@@ -114,10 +114,10 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmn:incoming>Flow_0kl15iz</bpmn:incoming>
       <bpmn:outgoing>Flow_01p02zi</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:endEvent id="Event_1ybgybb" name="Eingliederungs-hilfe abgeschlossen">
+    <bpmn:endEvent id="Event_1ybgybb" name="Abrechnung Eingliederungs-hilfe abgeschlossen">
       <bpmn:incoming>Flow_01p02zi</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:startEvent id="Event_00hiogi" name="Rechnung buchen">
+    <bpmn:startEvent id="Event_00hiogi" name="Rechnung zu buchen">
       <bpmn:outgoing>Flow_0ca4jvd</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_1l8c03y" />
     </bpmn:startEvent>
@@ -167,11 +167,11 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="Activity_140sqq1_di" bpmnElement="Activity_0qbzpkp">
         <dc:Bounds x="590" y="-830" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_02em4jy_di" bpmnElement="TextAnnotation_02em4jy">
+      <bpmndi:BPMNShape id="TextAnnotation_02em4jy_di" bpmnElement="TextAnnotation_02em4jy" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
         <dc:Bounds x="310" y="-900" width="99.99274099883856" height="55.749128919860624" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BPMNShape_1abdoo3" bpmnElement="TextAnnotation_0mfh970">
+      <bpmndi:BPMNShape id="BPMNShape_1abdoo3" bpmnElement="TextAnnotation_0mfh970" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
         <dc:Bounds x="440" y="-920" width="360" height="55" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
@@ -201,8 +201,11 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="Event_1m7z2hi_di" bpmnElement="Event_086lq95">
         <dc:Bounds x="252" y="-578" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="287" y="-550" width="86" height="40" />
+          <dc:Bounds x="292" y="-550" width="77" height="53" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_17lfol9_di" bpmnElement="Activity_06pgbmt">
+        <dc:Bounds x="409" y="-600" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_1724kxc_di" bpmnElement="TextAnnotation_1724kxc">
         <dc:Bounds x="550" y="-540" width="140" height="30" />
@@ -211,9 +214,6 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="TextAnnotation_1efo1ww_di" bpmnElement="TextAnnotation_1efo1ww">
         <dc:Bounds x="530" y="-670" width="480" height="82" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_17lfol9_di" bpmnElement="Activity_06pgbmt">
-        <dc:Bounds x="409" y="-600" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0z4gvwm_di" bpmnElement="Flow_0z4gvwm">
         <di:waypoint x="288" y="-560" />
@@ -244,7 +244,7 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="Event_111nn5v_di" bpmnElement="Event_1ontiz7">
         <dc:Bounds x="252" y="-318" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="241" y="-275" width="59" height="27" />
+          <dc:Bounds x="242" y="-275" width="59" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1nj36ba_di" bpmnElement="Event_0ftigx8">
@@ -253,12 +253,12 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="Event_07kohwr_di" bpmnElement="Event_01cgx8x">
         <dc:Bounds x="752" y="-318" width="36" height="36" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1sl7ec1_di" bpmnElement="Activity_1emh6pi">
+        <dc:Bounds x="380" y="-340" width="100" height="80" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_1nr184o_di" bpmnElement="TextAnnotation_1nr184o">
         <dc:Bounds x="540" y="-250" width="154.9988822576649" height="70.17543859649123" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1sl7ec1_di" bpmnElement="Activity_1emh6pi">
-        <dc:Bounds x="380" y="-340" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0dwkfvc_di" bpmnElement="Flow_0dwkfvc">
         <di:waypoint x="480" y="-300" />
@@ -301,14 +301,17 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="Event_1ybgybb_di" bpmnElement="Event_1ybgybb">
         <dc:Bounds x="812" y="52" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="793" y="95" width="77" height="40" />
+          <dc:Bounds x="793" y="95" width="77" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_005ohb5_di" bpmnElement="Event_00hiogi">
         <dc:Bounds x="262" y="52" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="235" y="95" width="90" height="14" />
+          <dc:Bounds x="248" y="95" width="65" height="27" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_18ozyog_di" bpmnElement="Activity_005nx1c">
+        <dc:Bounds x="360" y="30" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_0w3pni4_di" bpmnElement="TextAnnotation_0w3pni4">
         <dc:Bounds x="400" y="-50" width="100" height="41" />
@@ -321,9 +324,6 @@ Datei kann vom jeweiligen I-Helfer  in den Status "in Bearbeitung" gesetzt werd
       <bpmndi:BPMNShape id="TextAnnotation_0b5jnvy_di" bpmnElement="TextAnnotation_0b5jnvy" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
         <dc:Bounds x="790" y="-86" width="150" height="77" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_18ozyog_di" bpmnElement="Activity_005nx1c">
-        <dc:Bounds x="360" y="30" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1e6hpga_di" bpmnElement="Flow_1e6hpga">
         <di:waypoint x="460" y="70" />

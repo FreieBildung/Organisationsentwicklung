@@ -1,4 +1,4 @@
-# Eingliederungshilfe
+# Abrechnung von Eingliederungshilfen
 
 ## Beteiligte
 * Integrationshelferin
@@ -10,14 +10,14 @@
 
 ### Ablauf
 
-* Zu jedem Monatsanfang stellt die Verwaltung die Abrechnungstabelle für jede Integrationshelferin in ELO bereit.
+* Zu jedem Monatsanfang stellt die Verwaltung die Abrechnungstabelle für jede Integrationshelferin bereit.
 * Zum Abrechnungsstichtag am Monatsende füllt jede Integrationshelferin die Abrechnungstabelle mit den geleisteten Arbeitsstunden aus. Wenn alle Einträge erfolgt sind, muss die Integrationshelferin die Tabelle zur Prüfung übergeben.
 * Die Schulleitung erhält für jede zur Prüfung übergegebene Tabelle eine Benachrichtigung.
 * Die Schulleitung stellt die Korrektheit und Vollständigkeit der Abrechnung fest. 
   * Sofern eine Abrechnung Fehler aufweist, geht sie zurück an die betroffene Integrationshelferin zur Klärung bzw. Korrektur. 
 * Die Schulleitung gibt die Abrechnung zur Buchung bis zum Buchungsstichtag frei.
 * Die Buchhaltung erstellt für jede zur Buchung freigegebene Abrechnung eine Rechnung an den Kostenträger und versendet diese spätestens am Versandstichtag.
-* Die Buchhaltung übermittelt die Ausgangsrechnung an das DATEV-Rechnungswesen. Damit endet der Prozess der Eingliederungshilfe.
+* Die Buchhaltung übermittelt die Ausgangsrechnung an das DATEV-Rechnungswesen. Damit endet der Abrechnungsprozess der Eingliederungshilfe.
 
 ### Regelungen
 
@@ -42,6 +42,7 @@
 
 * Anzahl der Abrechnungen
 * Prozessdurchlaufzeit
+* Prozesskosten
 * Einhaltungsquote des Abrechnungsstichtags
 * Einhaltungsquote des Buchungsstichtags 
 * Einhaltungsquote des Versandstichtags 
