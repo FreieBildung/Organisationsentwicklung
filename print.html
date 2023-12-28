@@ -644,17 +644,61 @@ Nachweis Erweitertes Polizeiliches Führungszeugnis (wenn nicht bereits durch an
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="publikation"><a class="header" href="#publikation">Publikation</a></h1>
 <h2 id="website"><a class="header" href="#website">Website</a></h2>
-<p>Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert. Dazu dient die versionierte Ablage aller Inhalte im github Projekt-Repository. Sobald eine neue Version hinzugefügt wird, startet automatisch der Publikationsprozess und nach wenigen Minuten ist die neue Seite im Web unter <a href="https://freiebildung.github.io/Organisationsentwicklung">https://freiebildung.github.io/Organisationsentwicklung</a> verfügbar. </p>
-<p>Zum Schreiben und schnellen Testen kann die Erzeugung auch lokal auf dem PC durchgeführt werden.</p>
+<p>Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert. Dazu dient die versionierte Ablage aller Inhalte im github Projekt-Repository. Zum Schreiben und schnellen Testen kann die Erzeugung auch lokal auf dem PC durchgeführt werden.</p>
+<h2 id="beteiligte-2"><a class="header" href="#beteiligte-2">Beteiligte</a></h2>
+<ul>
+<li>Autorin</li>
+<li>Redakteurin</li>
+</ul>
+<h2 id="der-ideale-prozess-1"><a class="header" href="#der-ideale-prozess-1">Der ideale Prozess</a></h2>
+<h3 id="ablauf-1"><a class="header" href="#ablauf-1">Ablauf</a></h3>
+<ul>
+<li>
+<p>Autoren schreiben in Markdown und speichern im github-Repository <strong>Organisationsentwicklung</strong> in den Branch <em>develop</em>. Sie können lokal ihre Änderungen testen, wenn ihr System dafür eingerichtet ist.</p>
+</li>
+<li>
+<p>Eine Redakteurin kann durch einen Pull-Request die letzten Änderungen von <em>develop</em> nach <em>staging</em> übernehmen (dies erfolgt über diese <a href="https://github.com/FreieBildung/Organisationsentwicklung/compare/staging...develop">Github-Seite</a>. Dieser Pull-Request löst eine Publikation auf die Pages des Repositories aus, so dass nun alle erstellten Änderungen auch auf einer Testseite im Internet zu sehen sind. Die Seite steht im Anschluss unter <a href="https://freiebildung.github.io/Organisationsentwicklung/">https://freiebildung.github.io/Organisationsentwicklung/</a> zur Verfügung. Dieser Schritt ist optional und wird vor allem bei größeren Änderungen ohne lokale Vorprüfung empfohlen</p>
+</li>
+<li>
+<p>Die verantwortliche Redakteurin kann die Seite auf die offizielle Website übernehmen. Dies erfolgt zurzeit über den manuellen Start des Produktionsworkflows &quot;Run Workflow&quot; <a href="https://github.com/FreieBildung/Organisationsentwicklung/actions/workflows/deploy_pages.yml">auf dieser Seite</a>. Dabei kann der Workflow vom Branch &quot;develop&quot; (ungeprüft) oder &quot;staging&quot; (geprüft) die Daten lesen. Das System publiziert nun automatisch nach <a href="https://www.servicenetzwerk-freie-bildung.de">https://www.servicenetzwerk-freie-bildung.de</a>.</p>
+</li>
+</ul>
+<h3 id="regelungen-1"><a class="header" href="#regelungen-1">Regelungen</a></h3>
+<ul>
+<li>Abrechnungsstichtag: der 1. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
+<li>Buchungsstichtag: der 10. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
+<li>Versandstichtag: der 15. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.</li>
+<li>Das Servicenetzwerk erstellt Kennzahlen zur Fristeneinhaltung und zur Prozesshistorie.</li>
+<li>Die Buchhaltungsregeln für die Ausgangsrechnungsbuchung.</li>
+</ul>
+<h3 id="voraussetzungen-1"><a class="header" href="#voraussetzungen-1">Voraussetzungen</a></h3>
+<ul>
+<li>Kostenträger pro Integrationshelfer bekannt</li>
+<li>Integrationshelfer haben Zugriff auf Erfassungssoftware (ELO oder anderes Formular)</li>
+<li>Die Prozessteilnehmer agieren in einer Rolle und haben jeweils Vertreter, die die Augaben fristgerecht übernehmen können.</li>
+</ul>
+<h3 id="prozessfehler-1"><a class="header" href="#prozessfehler-1">Prozessfehler</a></h3>
+<p>Prozessfehler führen zu einem gescheiterten Workflow oder einem unerwünschten Ergebnis auf der Website.
+Die Prozessfehler können auf der <a href="https://github.com/FreieBildung/Organisationsentwicklung/actions">Github-Seite zu Actions</a> gesehen und untersucht werden. Der häufigste Fehler liegt in ungültigen Verweisen ausgehend von der SUMMARY.md Datei.</p>
+<h3 id="prozesskennzahlen-1"><a class="header" href="#prozesskennzahlen-1">Prozesskennzahlen</a></h3>
+<ul>
+<li>Anzahl der Prüfungen</li>
+<li>Anzahl der Produktionsdeployments</li>
+<li>Prozessdurchlaufzeit</li>
+<li>Prozesskosten</li>
+<li>Fehlerquote der Produktionsdeployments</li>
+</ul>
+<h3 id="prozessartefakte-1"><a class="header" href="#prozessartefakte-1">Prozessartefakte</a></h3>
+<ul>
+<li>Versionierte Dokumentation</li>
+<li>Publizierte Staging-Website</li>
+<li>Publizierte Produktions-Website</li>
+</ul>
+<h3 id="prozessablauf-12"><a class="header" href="#prozessablauf-12">Prozessablauf</a></h3>
+<h4 id="Übersicht-über-den-publikationsprozess"><a class="header" href="#Übersicht-über-den-publikationsprozess">Übersicht über den Publikationsprozess</a></h4>
+<p><img src="it/informationsmanagement/staging.png" alt="Übersicht über den Publikationsprozess" /></p>
+<h4 id="technischer-ablauf-im-detail"><a class="header" href="#technischer-ablauf-im-detail">Technischer Ablauf im Detail</a></h4>
 <p><img src="it/informationsmanagement/publizieren.png" alt="wie das Buch entsteht" /></p>
-<h2 id="lebenszyklus-prozess-der-dokumentation"><a class="header" href="#lebenszyklus-prozess-der-dokumentation">Lebenszyklus-Prozess der Dokumentation</a></h2>
-<h3 id="schreiben"><a class="header" href="#schreiben">Schreiben</a></h3>
-<p>Autoren schreiben im github-Repository <strong>Organisationsentwicklung</strong> in den Branch <em>develop</em>. Sie können  lokal ihre Änderungen testen.</p>
-<h3 id="prüfen"><a class="header" href="#prüfen">Prüfen</a></h3>
-<p>Ein Redakteur kann durch einen Pull-Request die letzten Änderungen von <em>develop</em> nach <em>staging</em> übernehmen. Dieser Pull-Request löst eine Publikation auf die Pages des Repositories aus, so dass nun alle erstellten Änderungen auch auf einer Testseite im Internet zu sehen sind. Die Seite steht im Anschluss unter <a href="https://freiebildung.github.io/Organisationsentwicklung/">https://freiebildung.github.io/Organisationsentwicklung/</a> zur Verfügung.</p>
-<h3 id="freigeben"><a class="header" href="#freigeben">Freigeben</a></h3>
-<p>Wenn die Änderungen auf der Testseite zufriedenstellend sind, kann der verantwortliche Redakteur die Seite auf die offizielle Website übernehmen. Dies erfolgt mit...</p>
-<p>https://github.com/FreieBildung/Organisationsentwicklung/compare/staging...develop</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lizenz"><a class="header" href="#lizenz">Lizenz</a></h1>
 <h2 id="creative-commons-legal-code"><a class="header" href="#creative-commons-legal-code">Creative Commons Legal Code</a></h2>
 <p>CC0 1.0 Universal</p>
