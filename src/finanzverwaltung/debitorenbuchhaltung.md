@@ -1,6 +1,6 @@
 # Debitorenbuchhaltung
 
 * **[Eingliederungshilfe](debitorenbuchhaltung/eingliederungshilfe.md)**
-* **[Elternbeitragsverwaltung](debitorenbuchhaltung/elternbeitragsverwaltung.md)**
+* **[Elternbeitragsverwaltung](debitorenbuchhaltung/elternbeitragsverarbeitung.md)**
 * **[Mahnwesen](debitorenbuchhaltung/mahnwesen.md)**
   
