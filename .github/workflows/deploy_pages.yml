@@ -22,7 +22,7 @@ jobs:
             echo `pwd`/mdbook >> $GITHUB_PATH
 
         - name: Build Book
-            run: |
+          run: |
             mdbook build
 
         - name: Deploy
