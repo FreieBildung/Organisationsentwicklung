@@ -18,22 +18,13 @@ Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert
 
 * Die verantwortliche Redakteurin kann die Seite auf die offizielle Website übernehmen. Dies erfolgt zurzeit über den manuellen Start des Produktionsworkflows "Run Workflow" [auf dieser Seite](https://github.com/FreieBildung/Organisationsentwicklung/actions/workflows/deploy_pages.yml). Dabei kann der Workflow vom Branch "develop" (ungeprüft) oder "staging" (geprüft) die Daten lesen. Das System publiziert nun automatisch nach [https://www.servicenetzwerk-freie-bildung.de](https://www.servicenetzwerk-freie-bildung.de).
 
-
-
-
 ### Regelungen
 
-* Abrechnungsstichtag: der 1. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.
-* Buchungsstichtag: der 10. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.
-* Versandstichtag: der 15. des Folgemonats, ersatzweise der vorangehende letzte Arbeitstag.
-* Das Servicenetzwerk erstellt Kennzahlen zur Fristeneinhaltung und zur Prozesshistorie.
-* Die Buchhaltungsregeln für die Ausgangsrechnungsbuchung.
+* Organisatorische Festlegung, wer wann vor der Publikation prüft.
 
 ### Voraussetzungen
 
-* Kostenträger pro Integrationshelfer bekannt
-* Integrationshelfer haben Zugriff auf Erfassungssoftware (ELO oder anderes Formular)
-* Die Prozessteilnehmer agieren in einer Rolle und haben jeweils Vertreter, die die Augaben fristgerecht übernehmen können.
+* Prozessteilnehmer haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.
 
 ### Prozessfehler
 
@@ -60,4 +51,7 @@ Die Prozessfehler können auf der [Github-Seite zu Actions](https://github.com/F
 ![Übersicht über den Publikationsprozess](staging.png)
 
 #### Technischer Ablauf im Detail
+
+Darstellung vereinfacht für die Erstellung der Staging-Umgebung.
+
 ![wie das Buch entsteht](publizieren.png)
