@@ -9,6 +9,32 @@
 
         <!-- Custom HTML head -->
         <script src="https://unpkg.com/bpmn-js@16.0.0/dist/bpmn-navigated-viewer.development.js"></script>
+
+        <!-- Custom JS scripts for mdbook-pdf PDF generation -->
+        <script type='text/javascript'>
+            let markAllContentHasLoadedForPrinting = () =>
+                window.setTimeout(
+                    () => {
+                        let p = document.createElement('div');
+                        p.setAttribute('id', 'content-has-all-loaded-for-mdbook-pdf-generation');
+                        document.body.appendChild(p);
+                    }, 100
+                );
+
+            window.addEventListener('load', () => {
+                // Expand all the <details> elements for printing.
+                r = document.getElementsByTagName('details');
+                for (let i of r)
+                    i.open = true;
+
+                try {
+                    MathJax.Hub.Register.StartupHook('End', markAllContentHasLoadedForPrinting);
+                } catch (e) {
+                    markAllContentHasLoadedForPrinting();
+                }
+            });
+        </script>
+    <div style="display: none"><a href="#einleitung">einleitung</a><a href="#finanzverwaltung">finanzverwaltung</a><a href="#finanzverwaltung-debitorenbuchhaltung">finanzverwaltung-debitorenbuchhaltung</a><a href="#finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung">finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung</a><a href="#finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung-stammdaten-abrechnungs-management">finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung-stammdaten-abrechnungs-management</a><a href="#finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung-lastschriftenausloesung">finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung-lastschriftenausloesung</a><a href="#finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung-lastschriftverbuchung">finanzverwaltung-debitorenbuchhaltung-elternbeitragsverarbeitung-lastschriftverbuchung</a><a href="#finanzverwaltung-debitorenbuchhaltung-eingliederungshilfe">finanzverwaltung-debitorenbuchhaltung-eingliederungshilfe</a><a href="#finanzverwaltung-debitorenbuchhaltung-mahnwesen">finanzverwaltung-debitorenbuchhaltung-mahnwesen</a><a href="#finanzverwaltung-kreditorenbuchhaltung">finanzverwaltung-kreditorenbuchhaltung</a><a href="#finanzverwaltung-kreditorenbuchhaltung-belegeingang">finanzverwaltung-kreditorenbuchhaltung-belegeingang</a><a href="#finanzverwaltung-kreditorenbuchhaltung-belegverbuchung">finanzverwaltung-kreditorenbuchhaltung-belegverbuchung</a><a href="#finanzverwaltung-kreditorenbuchhaltung-zahlungsverkehr">finanzverwaltung-kreditorenbuchhaltung-zahlungsverkehr</a><a href="#finanzverwaltung-lohnbuchhaltung">finanzverwaltung-lohnbuchhaltung</a><a href="#finanzverwaltung-lohnbuchhaltung-lohnzahlung">finanzverwaltung-lohnbuchhaltung-lohnzahlung</a><a href="#finanzverwaltung-lohnbuchhaltung-lohnverbuchung">finanzverwaltung-lohnbuchhaltung-lohnverbuchung</a><a href="#finanzverwaltung-lohnbuchhaltung-lohnauswertung">finanzverwaltung-lohnbuchhaltung-lohnauswertung</a><a href="#it">it</a><a href="#it-prozessunterstuetzung">it-prozessunterstuetzung</a><a href="#it-prozessunterstuetzung-prozessbilder">it-prozessunterstuetzung-prozessbilder</a><a href="#it-prozessunterstuetzung-weitere-schulprozesse">it-prozessunterstuetzung-weitere-schulprozesse</a><a href="#it-informationsmanagement">it-informationsmanagement</a><a href="#it-informationsmanagement-publikation">it-informationsmanagement-publikation</a><a href="#lizenz">lizenz</a></div>
         <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
 
         <meta name="description" content="">
