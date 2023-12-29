@@ -1,8 +1,8 @@
-# Einleitung
+# Prozesshandbuch Servicenetzerk
 
-Die vom Servicenetzwerk unterstützten Abläufe sind über das Menü links erreichbar. Momentan liegt der Fokus auf den Buchhaltungsprozessen, die für die teilnehmenden Schulen essenziell sind.
+Dieses ebook stellt die vom Servicenetzwerk unterstützten Abläufe vor. Momentan liegt der Fokus auf den Buchhaltungsprozessen, die für die teilnehmenden Schulen essenziell sind.
 
-Weitere Prozesse folgen, u.a.
+Weitere Prozesse werden folgen, u.a.
 
 ## Servicenetzwerk
 * Aufnahme einer weiteren Schule
