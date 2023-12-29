@@ -1,10 +1,24 @@
 # Publikation
 
-## Website
+## Ausgabeziel
+
+### Website
 
 Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert. Dazu dient die versionierte Ablage aller Inhalte im github Projekt-Repository. Zum Schreiben und schnellen Testen kann die Erzeugung auch lokal auf dem PC durchgeführt werden.
 
-## Beteiligte
+### PDF
+Die Erzeugung von PDFs ist möglich, allerdings momentan noch eingeschränkt.
+* Keine Titelseite
+* Keine Prozessdiagramme (ein Workaround findet sich auf der Seite zur Eingliederungshilfe)
+* Nicht automatisiert. 
+Der Aufruf kann von der Linux-Kommandozeile erfolgen: 
+```
+docker run --rm -v /path/to/book:/book -v ~/.cargo/bin:/mdbook hollowman6/mdbook-pdf
+```
+Das PDF liegt nach erfolgreicher Erzeugung in `book/pdf/output.pdf`.
+
+
+## Prozessbeteiligte
 * Autorin
 * Redakteurin
 
