@@ -194,12 +194,8 @@
 <ul>
 <li>Keine Titelseite</li>
 <li>Keine Prozessdiagramme (ein Workaround findet sich auf der Seite zur Eingliederungshilfe)</li>
-<li>Nicht automatisiert. 
-Der Aufruf kann von der Linux-Kommandozeile erfolgen: </li>
+<li>Nicht automatisierbar, das Modul führt zu Fehlern im automatischen Deployment.</li>
 </ul>
-<pre><code>docker run --rm -v /path/to/book:/book -v ~/.cargo/bin:/mdbook hollowman6/mdbook-pdf
-</code></pre>
-<p>Das PDF liegt nach erfolgreicher Erzeugung in <code>book/pdf/output.pdf</code>.</p>
 <h2 id="prozessbeteiligte"><a class="header" href="#prozessbeteiligte">Prozessbeteiligte</a></h2>
 <ul>
 <li>Autorin</li>
@@ -209,7 +205,7 @@ Der Aufruf kann von der Linux-Kommandozeile erfolgen: </li>
 <h3 id="ablauf"><a class="header" href="#ablauf">Ablauf</a></h3>
 <ul>
 <li>
-<p>Autoren schreiben in Markdown und speichern im github-Repository <strong>Organisationsentwicklung</strong> in den Branch <em>develop</em>. Sie können lokal ihre Änderungen testen, wenn ihr System dafür eingerichtet ist.</p>
+<p>Autorinnen schreiben in Markdown und speichern im github-Repository <strong>Organisationsentwicklung</strong> in den Branch <em>develop</em>. Sie können lokal ihre Änderungen testen, wenn ihr System dafür eingerichtet ist.</p>
 </li>
 <li>
 <p>Eine Redakteurin kann durch einen Pull-Request die letzten Änderungen von <em>develop</em> nach <em>staging</em> übernehmen (dies erfolgt über diese <a href="https://github.com/FreieBildung/Organisationsentwicklung/compare/staging...develop">Github-Seite</a>. Dieser Pull-Request löst eine Publikation auf die Pages des Repositories aus, so dass nun alle erstellten Änderungen auch auf einer Testseite im Internet zu sehen sind. Die Seite steht im Anschluss unter <a href="https://freiebildung.github.io/Organisationsentwicklung/">https://freiebildung.github.io/Organisationsentwicklung/</a> zur Verfügung. Dieser Schritt ist optional und wird vor allem bei größeren Änderungen ohne lokale Vorprüfung empfohlen</p>
@@ -224,7 +220,7 @@ Der Aufruf kann von der Linux-Kommandozeile erfolgen: </li>
 </ul>
 <h3 id="voraussetzungen"><a class="header" href="#voraussetzungen">Voraussetzungen</a></h3>
 <ul>
-<li>Prozessteilnehmer haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.</li>
+<li>Prozessteilnehmerinnen haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.</li>
 </ul>
 <h3 id="prozessfehler"><a class="header" href="#prozessfehler">Prozessfehler</a></h3>
 <p>Prozessfehler führen zu einem gescheiterten Workflow oder einem unerwünschten Ergebnis auf der Website.
@@ -249,6 +245,20 @@ Die Prozessfehler können auf der <a href="https://github.com/FreieBildung/Organ
 <h4 id="technischer-ablauf-im-detail"><a class="header" href="#technischer-ablauf-im-detail">Technischer Ablauf im Detail</a></h4>
 <p>Darstellung vereinfacht für die Erstellung der Staging-Umgebung.</p>
 <p><img src="publizieren.png" alt="wie das Buch entsteht" /></p>
+<h5 id="erzeugung-des-pdfs"><a class="header" href="#erzeugung-des-pdfs">Erzeugung des PDFs</a></h5>
+<p>Für die PDF-Erzeugung muss <code>book.toml</code> modifiziert werden. Dieser Abschnitt wird angehängt:</p>
+<pre><code>[output.pdf]
+optional=true
+display-header-footer = true
+paperWidth = 8.2
+paperHeight = 11.6
+header-template = &quot;&lt;h3 style='font-size:12px; margin-left: 48px' class='title'&gt;&lt;/h3&gt;&quot;
+footer-template = &quot;&lt;p style='font-size:10px; margin-left: 48%'&gt;&lt;span class='pageNumber'&gt;&lt;/span&gt; / &lt;span class='totalPages'&gt;&lt;/span&gt;&lt;/p&gt;&quot;
+</code></pre>
+<p>Der Aufruf kann dann von der Linux-Kommandozeile erfolgen: </p>
+<pre><code>docker run --rm -v /path/to/book:/book -v ~/.cargo/bin:/mdbook hollowman6/mdbook-pdf
+</code></pre>
+<p>Das PDF liegt nach erfolgreicher Erzeugung in <code>book/pdf/output.pdf</code>.</p>
 
                     </main>
 
