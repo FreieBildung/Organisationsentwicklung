@@ -10,3 +10,4 @@
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
 openFromUrl('./zahlungsverkehr.bpmn');
 </script>
+<img class="replacement-image" src="zahlungsverkehr.png"/>

@@ -40,6 +40,7 @@ Das ist ein Text vor dem Diagramm.
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
     openFromUrl('../../finanzverwaltung/kreditorenbuchhaltung/belegeingang.bpmn');
 </script>
+<img class="replacement-image" src="../../finanzverwaltung/kreditorenbuchhaltung/belegeingang.bpmn"/>
 
 Das ist ein Text nach dem Diagramm.
 
