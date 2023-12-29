@@ -29,4 +29,6 @@
     - [Publikation](it/informationsmanagement/publikation.md)
 
 [Beitragende]()
+[Datenschutz](datenschutz.md)
 [Lizenz](lizenz.md)
+
