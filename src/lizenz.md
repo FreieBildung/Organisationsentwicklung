@@ -1,7 +1,5 @@
 # Lizenz
 
-# Lizenz
-
 Quelle: [creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 ## Sie dürfen
