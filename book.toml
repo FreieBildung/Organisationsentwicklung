@@ -3,8 +3,4 @@ authors = ["Servicenetzwerk Freie Bildung"]
 language = "de"
 multilingual = false
 src = "src"
-
-[output.html]
-#additional-js = ["js/camunda.js"]
-additional-css = ["css/zoom.css"]
-
+title = "Servicenetzwerk Freie Bildung"
