@@ -1,6 +1,8 @@
 # Lizenz
 
-Quelle: [creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
+**[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de)** Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International 
+
+Quelle der Übersicht: [creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 
 ## Sie dürfen
 
