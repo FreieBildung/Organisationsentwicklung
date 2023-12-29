@@ -10,5 +10,4 @@
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
 openFromUrl('./belegverbuchung.bpmn');
 </script>
-
-Das ist ein Text nach dem Diagramm.
+<img class="replacement-image" src="belegverbuchung.png"/>

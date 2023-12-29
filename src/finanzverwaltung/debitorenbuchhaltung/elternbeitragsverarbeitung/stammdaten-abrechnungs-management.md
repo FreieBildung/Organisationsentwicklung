@@ -10,3 +10,4 @@
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
 openFromUrl('./stammdaten-abrechnungs-management.bpmn');
 </script>
+<img class="replacement-image" src="stammdaten-abrechnungs-management.png"/>

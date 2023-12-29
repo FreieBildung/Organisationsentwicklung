@@ -10,4 +10,4 @@
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
 openFromUrl('./lohnzahlung.bpmn');
 </script>
-
+<img class="replacement-image" src="lohnzahlung.png"/>

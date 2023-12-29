@@ -10,13 +10,7 @@ Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert
 Die Erzeugung von PDFs ist möglich, allerdings momentan noch eingeschränkt.
 * Keine Titelseite
 * Keine Prozessdiagramme (ein Workaround findet sich auf der Seite zur Eingliederungshilfe)
-* Nicht automatisiert. 
-Der Aufruf kann von der Linux-Kommandozeile erfolgen: 
-```
-docker run --rm -v /path/to/book:/book -v ~/.cargo/bin:/mdbook hollowman6/mdbook-pdf
-```
-Das PDF liegt nach erfolgreicher Erzeugung in `book/pdf/output.pdf`.
-
+* Nicht automatisierbar, das Modul führt zu Fehlern im automatischen Deployment.
 
 ## Prozessbeteiligte
 * Autorin
@@ -26,7 +20,7 @@ Das PDF liegt nach erfolgreicher Erzeugung in `book/pdf/output.pdf`.
 
 ### Ablauf
 
-* Autoren schreiben in Markdown und speichern im github-Repository **Organisationsentwicklung** in den Branch *develop*. Sie können lokal ihre Änderungen testen, wenn ihr System dafür eingerichtet ist.
+* Autorinnen schreiben in Markdown und speichern im github-Repository **Organisationsentwicklung** in den Branch *develop*. Sie können lokal ihre Änderungen testen, wenn ihr System dafür eingerichtet ist.
 
 * Eine Redakteurin kann durch einen Pull-Request die letzten Änderungen von *develop* nach *staging* übernehmen (dies erfolgt über diese [Github-Seite](https://github.com/FreieBildung/Organisationsentwicklung/compare/staging...develop). Dieser Pull-Request löst eine Publikation auf die Pages des Repositories aus, so dass nun alle erstellten Änderungen auch auf einer Testseite im Internet zu sehen sind. Die Seite steht im Anschluss unter [https://freiebildung.github.io/Organisationsentwicklung/](https://freiebildung.github.io/Organisationsentwicklung/) zur Verfügung. Dieser Schritt ist optional und wird vor allem bei größeren Änderungen ohne lokale Vorprüfung empfohlen
 
@@ -38,7 +32,7 @@ Das PDF liegt nach erfolgreicher Erzeugung in `book/pdf/output.pdf`.
 
 ### Voraussetzungen
 
-* Prozessteilnehmer haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.
+* Prozessteilnehmerinnen haben Zugriff auf das github-Projekt und sind in die Abläufe eingewiesen.
 
 ### Prozessfehler
 
@@ -69,3 +63,24 @@ Die Prozessfehler können auf der [Github-Seite zu Actions](https://github.com/F
 Darstellung vereinfacht für die Erstellung der Staging-Umgebung.
 
 ![wie das Buch entsteht](publizieren.png)
+
+
+##### Erzeugung des PDFs
+
+Für die PDF-Erzeugung muss `book.toml` modifiziert werden. Dieser Abschnitt wird angehängt:
+
+```
+[output.pdf]
+optional=true
+display-header-footer = true
+paperWidth = 8.2
+paperHeight = 11.6
+header-template = "<h3 style='font-size:12px; margin-left: 48px' class='title'></h3>"
+footer-template = "<p style='font-size:10px; margin-left: 48%'><span class='pageNumber'></span> / <span class='totalPages'></span></p>"
+```
+
+Der Aufruf kann dann von der Linux-Kommandozeile erfolgen: 
+```
+docker run --rm -v /path/to/book:/book -v ~/.cargo/bin:/mdbook hollowman6/mdbook-pdf
+```
+Das PDF liegt nach erfolgreicher Erzeugung in `book/pdf/output.pdf`.
