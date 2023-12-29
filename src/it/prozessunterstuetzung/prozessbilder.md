@@ -1,6 +1,6 @@
 # Darstellung der Prozessdiagramme
 
-Da die eingestellten Prozessdiagramme teilweise sehr umfangreich sind, benötigen wir eine Zoom-Funktion. Die einfachste Weise ist, den Camunda Modeler in einer Read-Only-ansicht einzubinden. Im Diagramm kann man dann mit Strg + Mausrad zoomen. 
+Da die eingestellten Prozessdiagramme teilweise sehr umfangreich sind, benötigen wir eine Zoom-Funktion. Die einfachste Weise ist, den Camunda Modeler in einer Read-Only-ansicht einzubinden. Im Diagramm kann man dann mit Strg + Mausrad zoomen oder mit Shift+ Mausrad horizontal scrollen.
 
 Leider bringt dies etwas Code-Overhead mit sich, da das Script zum Einbinden sich nicht komplett "verstecken" lässt.
 
@@ -18,7 +18,7 @@ Das ist ein Text vor dem Diagramm.
     var modeler = new BpmnJS({container: $('#js-canvas'), width:'100%',height:500 });
     function openFromUrl(url) { $.ajax(url, { dataType : 'text' }).done(async function(xml) {
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
-    openFromUrl('./belegeingang.bpmn');
+    openFromUrl('belegeingang.bpmn');
 </script>
 
 Das ist ein Text nach dem Diagramm.
@@ -38,7 +38,7 @@ Das ist ein Text vor dem Diagramm.
     var modeler = new BpmnJS({container: $('#js-canvas'), width:'100%',height:500 });
     function openFromUrl(url) { $.ajax(url, { dataType : 'text' }).done(async function(xml) {
         try { await modeler.importXML(xml); modeler.get('canvas').zoom('fit-viewport'); } catch (err) { console.error(err); }});}
-    openFromUrl('../finanzverwaltung/kreditorenbuchhaltung/belegeingang.bpmn');
+    openFromUrl('../../finanzverwaltung/kreditorenbuchhaltung/belegeingang.bpmn');
 </script>
 
 Das ist ein Text nach dem Diagramm.
