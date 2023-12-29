@@ -7,3 +7,11 @@ title = "Servicenetzwerk Freie Bildung"
 [output.html]
 fold.enable = true
 fold.level = 1
+
+[output.pdf]
+optional=true
+display-header-footer = true
+paperWidth = 8.2
+paperHeight = 11.6
+header-template = "<h3 style='font-size:12px; margin-left: 48px' class='title'></h3>"
+footer-template = "<p style='font-size:10px; margin-left: 48%'><span class='pageNumber'></span> / <span class='totalPages'></span></p>"
