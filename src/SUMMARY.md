@@ -6,7 +6,6 @@
 
 - [Leistungsprozesse](02-leistungsprozesse.md)
   - [Finanzverwaltung](leistungsprozesse/finanzverwaltung.md)
-
     - [Debitorenbuchhaltung](leistungsprozesse/finanzverwaltung/debitorenbuchhaltung.md)
       - [Elternbeitragsverarbeitung](leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung.md)
         - [Stammdaten-Abrechnungs-Management](leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung/stammdaten-abrechnungs-management.md)
