@@ -1,12 +1,17 @@
 [book]
 authors = ["Servicenetzwerk Freie Bildung"]
+description = "Handbuch"
 language = "de"
-multilingual = false
 src = "src"
 title = "Servicenetzwerk Freie Bildung"
+
+[build]
+create-missing = false
+
 [output.html]
 fold.enable = true
-fold.level = 1
+fold.level = 0
+input-404 = "book-assets/404.md"
 
 [output.pdf]
 optional=true
