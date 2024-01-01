@@ -6,5 +6,5 @@ src = "src"
 title = "Servicenetzwerk Freie Bildung"
 [output.html]
 fold.enable = true
-fold.level = 1
+fold.level = 0
 
