@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="de" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Datenschutz - Servicenetzwerk Freie Bildung</title>
+
+
+        <!-- Custom HTML head -->
+        <script src="https://unpkg.com/bpmn-js@16.0.0/dist/bpmn-navigated-viewer.development.js"></script>
+        <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="00-einleitung.html">Einleitung</a></li><li class="chapter-item "><a href="01-prozess-schnittstelle.html"><strong aria-hidden="true">1.</strong> Prozess-Schnittstelle</a></li><li class="chapter-item "><a href="02-leistungsprozesse.html"><strong aria-hidden="true">2.</strong> Leistungsprozesse</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung.html"><strong aria-hidden="true">2.1.</strong> Finanzverwaltung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung.html"><strong aria-hidden="true">2.1.1.</strong> Debitorenbuchhaltung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung.html"><strong aria-hidden="true">2.1.1.1.</strong> Elternbeitragsverarbeitung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung/stammdaten-abrechnungs-management.html"><strong aria-hidden="true">2.1.1.1.1.</strong> Stammdaten-Abrechnungs-Management</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung/lastschriftenausloesung.html"><strong aria-hidden="true">2.1.1.1.2.</strong> Lastschriftenauslösung</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung/lastschriftverbuchung.html"><strong aria-hidden="true">2.1.1.1.3.</strong> Lastschriftverbuchung</a></li></ol></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/eingliederungshilfe.html"><strong aria-hidden="true">2.1.1.2.</strong> Eingliederungshilfe</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/debitorenbuchhaltung/mahnwesen.html"><strong aria-hidden="true">2.1.1.3.</strong> Mahnwesen</a></li></ol></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/kreditorenbuchhaltung.html"><strong aria-hidden="true">2.1.2.</strong> Kreditorenbuchhaltung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/kreditorenbuchhaltung/belegeingang.html"><strong aria-hidden="true">2.1.2.1.</strong> Belegeingang</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/kreditorenbuchhaltung/belegverbuchung.html"><strong aria-hidden="true">2.1.2.2.</strong> Belegverbuchung</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/kreditorenbuchhaltung/zahlungsverkehr.html"><strong aria-hidden="true">2.1.2.3.</strong> Zahlungsverkehr</a></li></ol></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/lohnbuchhaltung.html"><strong aria-hidden="true">2.1.3.</strong> Lohnbuchhaltung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/lohnbuchhaltung/lohnzahlung.html"><strong aria-hidden="true">2.1.3.1.</strong> Lohnzahlung</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/lohnbuchhaltung/lohnverbuchung.html"><strong aria-hidden="true">2.1.3.2.</strong> Lohnverbuchung</a></li><li class="chapter-item "><a href="leistungsprozesse/finanzverwaltung/lohnbuchhaltung/lohnauswertung.html"><strong aria-hidden="true">2.1.3.3.</strong> Lohnauswertung</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="03-genossenschaftsprozesse.html"><strong aria-hidden="true">3.</strong> Genossenschaftsprozesse</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="genossenschaftsprozesse/it.html"><strong aria-hidden="true">3.1.</strong> Information und Kommunikation</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="genossenschaftsprozesse/it/informationsmanagement.html"><strong aria-hidden="true">3.1.1.</strong> Informationsmanagement</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="genossenschaftsprozesse/it/informationsmanagement/publikation.html"><strong aria-hidden="true">3.1.1.1.</strong> Publikation</a></li></ol></li><li class="chapter-item "><a href="genossenschaftsprozesse/it/prozessunterstuetzung.html"><strong aria-hidden="true">3.1.2.</strong> Prozessunterstützung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="genossenschaftsprozesse/it/prozessunterstuetzung/prozessbilder.html"><strong aria-hidden="true">3.1.2.1.</strong> Darstellung der Prozessdiagramme</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="04-weiterentwicklung.html"><strong aria-hidden="true">4.</strong> Weiterentwicklung</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="weiterentwicklung/weitere-schulprozesse.html"><strong aria-hidden="true">4.1.</strong> Weitere Schulprozesse</a></li></ol></li><li class="chapter-item "><div>Beitragende</div></li><li class="chapter-item affix "><a href="98-datenschutz.html" class="active">Datenschutz</a></li><li class="chapter-item affix "><a href="99-lizenz.html">Lizenz</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <style>
+                .menu-title {
+                    color: #A35000;
+                }
+                @media screen {
+                    .replacement-image { display: none;}
+                }
+                @media print {
+                    .replacement-image { display: block; }
+                }
+                </style>
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Servicenetzwerk Freie Bildung</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="datenschutzerklärung"><a class="header" href="#datenschutzerklärung">Datenschutzerklärung</a></h1>
+<h2 id="cookies"><a class="header" href="#cookies">Cookies</a></h2>
+<p>Wir verwenden keine Cookies.</p>
+<h2 id="hosting"><a class="header" href="#hosting">Hosting</a></h2>
+<p>Unser Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittelt:</p>
+<p>IP-Adresse, die Adresse der vorher besuchten Website (Referer Anfrage-Header), Datum und Uhrzeit der Anfrage, Zeitzonendifferenz zur Greenwich Mean Time, Inhalt der Anforderung, HTTP-Statuscode, übertragene Datenmenge, Website, von der die Anforderung kommt und Informationen zu Browser und Betriebssystem.</p>
+<p>Das ist erforderlich, um unsere Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO.</p>
+<p>Es erfolgt kein Tracking und wir haben auf diese Daten keinen direkten Zugriff, sondern erhalten lediglich eine anonymisierte, statistische Zusammenfassung. Diese beinhaltet die Adresse der vorher besuchten Seite, die Häufigkeit der jeweils aufgerufenen Seiten und die Anzahl eindeutiger Besucher. Diese Daten führen wir nicht mit anderen Daten zusammen.</p>
+<p>Wir setzen für die Zurverfügungstellung unserer Website folgenden Hoster ein:</p>
+<pre><code>GitHub Inc.
+88 Colin P Kelly Jr St
+San Francisco, CA 94107
+United States
+</code></pre>
+<p>Dieser ist Empfänger Ihrer personenbezogenen Daten. Dies entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO, selbst keinen Server in unseren Räumlichkeiten vorhalten zu müssen. Serverstandort ist USA.</p>
+<p>Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber GitHub finden Sie unter: <a href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages">https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages</a></p>
+<p>Sie haben das Recht der Verarbeitung zu widersprechen. Ob der Widerspruch erfolgreich ist, ist im Rahmen einer Interessenabwägung zu ermitteln.</p>
+<p>Die Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt.</p>
+<p>Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Die Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht gewährleistet.</p>
+<p>GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen GitHub personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie unter: <a href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1%E2%80%93the-standard-contractual-clauses-processors">https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors</a></p>
+<h2 id="rechtliche-hinweise"><a class="header" href="#rechtliche-hinweise">Rechtliche Hinweise</a></h2>
+<p>Grundsätzlich ist ein Auftragsverarbeitungsvertrag mit dem Hoster abzuschließen. Das bayerische Landesamt für Datenschutzaufsicht hat für das Hosting rein statischer Websites eine Ausnahme gemacht. Für den Fall, dass die Webseite der Selbstdarstellung dient, z.B. von Vereinen oder Kleinunternehmen, keine personenbezogenen Daten an den Betreiber fließen und kein Tracking stattfindet, liegt keine Auftragsverarbeitung vor. Weiter heißt es: „Die Tatsache, dass auch beim Hosting von statischen Webseiten zwangsläufig IP-Adressen, d.h. personenbezogene Daten, verarbeitet werden müssen, führt nicht zur Annahme einer Auftragsverarbeitung. Das wäre nicht sachgerecht. Die (kurzfristige) IP-Adressenspeicherung ist vielmehr noch der TK-Zugangsvermittlung des Website-Hosters nach dem TKG zuzurechnen und dient in erster Linie Sicherheitszwecken des Hosters.“ (https://www.lda.bayern.de/media/veroeffentlichungen/FAQ_Hosting_keine_Auftragsverarbeitung.pdf) Wir gehen davon aus, dass diese Ausnahme auf GitHub Pages anzuwenden ist.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="weiterentwicklung/weitere-schulprozesse.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="99-lizenz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="weiterentwicklung/weitere-schulprozesse.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="99-lizenz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
