@@ -9,8 +9,10 @@ Die Weiterentwicklung nimmt naturgemäß am Anfang einen großen Raum ein, weil 
 * Einführung neuer Leistungsangebote
 * Training
 * Informationskonzept
+* Verrechnungsprozesse
 
 ### IT
+* Bereitstellung von vorkonfigurierten Diensten, z.B. Website
 * Automatisierung von Abläufen
 * Sicherheitsprozesse
 
@@ -19,4 +21,5 @@ Die Weiterentwicklung nimmt naturgemäß am Anfang einen großen Raum ein, weil 
 * Kommunikationsprozesse
 * Regulatorische Prozesse
 
-
+### Partner
+* Aufnahme von Partnerangeboten in die Service-Leistungen
