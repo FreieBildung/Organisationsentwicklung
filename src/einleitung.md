@@ -1,6 +1,6 @@
 <img class="replacement-image" src="it/assets/titel.png"/>
 
-# Prozesshandbuch Servicenetzwerk
+# Handbuch Servicenetzwerk Freie Bildung
 
 Dieses ebook stellt die vom Servicenetzwerk unterstützten Abläufe vor. 
 
