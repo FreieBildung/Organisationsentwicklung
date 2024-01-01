@@ -18,19 +18,13 @@
 
 ## Prozesse
 
-### Lernbezogene Prozesse
-
-... 
-
 ### Organisatorische Prozesse
 
 #### Finanzverwaltung
 
-1. Kreditorenbuchhaltung
-    
-2. Debitorenbuchhaltung
-
-3. Lohnbuchhaltung
+* Kreditorenbuchhaltung
+* Debitorenbuchhaltung
+* Lohnbuchhaltung
 
 ### An- und Abwesenheit
 
