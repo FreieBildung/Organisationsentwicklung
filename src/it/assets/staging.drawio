@@ -1,1 +1,343 @@
-<mxfile host="Electron" modified="2023-12-29T01:50:51.798Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.4.2 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36" etag="OSknvD35dciZihEG_vnJ" version="14.4.2" type="device"><diagram id="SfIg9ZehUagJYM4pW7xx" name="staging">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</diagram></mxfile>
+<mxfile host="Electron" modified="2024-01-01T14:38:00.238Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="nfWITdO4CtKfprW6kyUa" version="22.1.16" type="device" pages="3">
+  <diagram id="SfIg9ZehUagJYM4pW7xx" name="staging">
+    <mxGraphModel dx="2631" dy="1784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q2lMafh3maAkQUWObI2H-1" value="&amp;lt;github-organization&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;FreieBildung&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="300" y="20" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-2" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-3" target="Q2lMafh3maAkQUWObI2H-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="210" as="sourcePoint" />
+            <mxPoint x="170" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-3" value="&amp;lt;github-repository&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;Organisationsentwicklung&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="300" y="160" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-4" value="&amp;lt;github-repository&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;FreieBildung.github.io&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="680" y="160" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-5" value="&amp;lt;github-branch&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;staging&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="300" y="290" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-6" value="&amp;lt;github-branch&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;develop&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="290" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-7" value="&amp;lt;github-branch&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;main&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="680" y="290" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-8" value="&amp;lt;github-pages&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;https://freiebildung.github.io/Organisationsentwicklung/&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="70" y="610" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-11" value="" style="shape=flexArrow;endArrow=classic;html=1;shadow=1;fontFamily=Comic Sans MS;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-6" target="Q2lMafh3maAkQUWObI2H-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="500" as="sourcePoint" />
+            <mxPoint x="320" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-14" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;comic sans ms&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;Ein Pull-Request nach Staging löst die Publikation in die Staging-Pages aus&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="268" y="400" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-18" value="deploy_to_staging.yml" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;labelBackgroundColor=none;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="268" y="380" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-22" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-18" target="Q2lMafh3maAkQUWObI2H-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="288" y="400.0000000000001" as="sourcePoint" />
+            <mxPoint x="338" y="350.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-17" value="" style="shape=flexArrow;endArrow=classic;html=1;shadow=1;fontFamily=Comic Sans MS;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="473.99999999999955" y="510" as="sourcePoint" />
+            <mxPoint x="429" y="609" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-23" value="Pull-Request" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;labelBackgroundColor=none;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="210" y="290" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-24" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.4545454545455" y="170" as="sourcePoint" />
+            <mxPoint x="440" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-25" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-6" target="Q2lMafh3maAkQUWObI2H-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449.4545454545455" y="170" as="sourcePoint" />
+            <mxPoint x="448" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q2lMafh3maAkQUWObI2H-26" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Q2lMafh3maAkQUWObI2H-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="440" as="sourcePoint" />
+            <mxPoint x="430" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fT35Rnp8yIrbImqnS2Vu-1" value="&amp;lt;github-pages&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;https://freiebildung.github.io/&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="670" y="610" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fT35Rnp8yIrbImqnS2Vu-2" value="&amp;lt;internet-domain&amp;gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px&quot;&gt;https://servicenetzwerk-freie-bildung.de/&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="670" y="710" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fT35Rnp8yIrbImqnS2Vu-3" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="819.9999999999995" y="290" as="sourcePoint" />
+            <mxPoint x="819.9999999999995" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fT35Rnp8yIrbImqnS2Vu-4" value="hier werden die Inhalte geschrieben und ggf. lokal getestet" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;shadow=1;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="-130" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fT35Rnp8yIrbImqnS2Vu-5" value="Hier wird auf einer nicht veröffentlichten Internetseite getestet" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;shadow=1;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="310" y="-130" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fT35Rnp8yIrbImqnS2Vu-6" value="Hier liegt die öffentlich publizierte Seite" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;shadow=1;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="680" y="-130" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-1" value="Erstellen" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="-750" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-2" value="Prüfen (zurzeit optional)" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-750" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-3" value="Publizieren" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="520" y="-750" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-6" value="Auslöser" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="-680" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-7" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Eine Autorin schreibt Texte des Prozesshandbuchs in Markdown, Bildern und Diagrammen. Sie kann&amp;nbsp; (muss aber nicht) auf ihrem PC eine Probeversion der Publikation ansehen.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="-620" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-8" value="Aktivität" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="-630" width="60" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-9" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Dokumentationsbedarf&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-15" y="-670" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-10" value="Abschluss" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="-500" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-11" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Die Autorin übergibt die erstellten Texte an das Github Repository &quot;Organisationsentwicklung&quot; in den Branch &quot;develop&quot;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="-500" width="245" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-12" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Probeinstallation im Internet benötigt.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="265" y="-670" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-13" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Eine Redakteurin übernimmt den aktuellen Stand des Branches &quot;develop&quot; in den Branch &quot;staging&quot; über einen so genannten &quot;Pull Request&quot;, gefolgt von einem &quot;Merge&quot;. Das Github-System erstellt automatisch eine neue Version der Staging-Website. Die Redakteurin prüft nun die Website.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-620" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-14" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Die Redakteuerin gibt die neue Version informell frei.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="252.5" y="-500" width="245" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-15" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;(Neu-)Publikation im Internet benötigt.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="545" y="-670" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-17" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Eine Redakteurin startet den Publikationsworkflow &quot;Deploy to Production Pages&quot; im github Actions Menü. Dabei wählt sie je nach Bedarf entweder &quot;develop&quot; (ungeprüft) oder &quot;staging&quot; (geprüft) aus. Das System erstellt automatisch eine neue Version der produktiven Website.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="-620" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Die Website ist ohne weiteres Zutun aktualisiert.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="525" y="-500" width="245" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-19" value="deploy_to_staging" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1253" y="-334" width="207" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-22" value="3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d80073;fontColor=#ffffff;fontFamily=Comic Sans MS;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1444" y="-355" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-23" value="branch &quot;develop&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="-541" width="170" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-24" value="branch &quot;staging&quot;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="-621" width="170" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-25" value="0" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d80073;fontColor=#ffffff;fontFamily=Comic Sans MS;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1163" y="-548" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-28" value="" style="endArrow=none;html=1;fontFamily=Comic Sans MS;sketch=1;shadow=1;sketchStyle=comic;exitX=0.78;exitY=0.313;exitDx=0;exitDy=0;dashed=1;strokeColor=#E6D0DE;strokeWidth=2;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1401.1999999999998" y="-521.1210000000001" as="sourcePoint" />
+            <mxPoint x="1180" y="-591" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-29" value="Die neue Version wurde hier abgespeichert." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;fontSize=13;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1190" y="-510" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-30" value="Der Pull-Request mit Merge übernimmt die Dokumente und löst ein Signal aus." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=1;sketchStyle=comic;fontFamily=Comic Sans MS;fontSize=13;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1200" y="-621" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-31" value="" style="curved=1;endArrow=classic;html=1;dashed=1;strokeWidth=2;fontFamily=Comic Sans MS;fontSize=13;strokeColor=#B5739D;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="P5geH7VPQGh_iKefIylm-23" target="P5geH7VPQGh_iKefIylm-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="-651" as="sourcePoint" />
+            <mxPoint x="1180" y="-701" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1190" y="-641" />
+              <mxPoint x="1120" y="-661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P5geH7VPQGh_iKefIylm-26" value="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;shadow=1;sketch=1;sketchStyle=comic;fillColor=#d80073;fontColor=#ffffff;fontFamily=Comic Sans MS;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1163" y="-631" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XP6V0tWkyZpRo8pOwqhq" name="Seite-2">
+    <mxGraphModel dx="635" dy="2126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-3" value="Servicenetzwerk" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#eeeeee;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="-960" width="150" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-4" value="Leistungsprozesse" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1440" y="-790" width="220" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-6" value="Weiterentwicklung Servicenetzwerk&amp;nbsp;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Erweiterung, Optimierung, Automatisierung&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1217" y="-960" width="220" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-10" value="Prozess-Schnittstelle" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1290" y="-700" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-11" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.225;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-7" target="xLPJ1dpLm62vggdc6FZ8-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1280" y="-790" as="sourcePoint" />
+            <mxPoint x="1330" y="-840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-12" value="Anforderungen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-11" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-7" value="Genossenschaftsprozesse" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#cdeb8b;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="-790" width="220" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-13" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-6" target="xLPJ1dpLm62vggdc6FZ8-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1275" y="-760" as="sourcePoint" />
+            <mxPoint x="1275" y="-857" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="-913" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-14" value="Leistungs-&lt;br&gt;Releases" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-13" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="68" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-15" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.705;exitY=0.997;exitDx=0;exitDy=0;entryX=0.73;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-6" target="xLPJ1dpLm62vggdc6FZ8-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1275" y="-760" as="sourcePoint" />
+            <mxPoint x="1275" y="-857" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-16" value="Genossenschafts-&lt;br&gt;Releases" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-15" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-17" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.123;exitY=0.054;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-8" target="xLPJ1dpLm62vggdc6FZ8-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1270" y="-620" as="sourcePoint" />
+            <mxPoint x="1270" y="-717" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-18" value="Mitgestaltung" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-17" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-19" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-8" target="xLPJ1dpLm62vggdc6FZ8-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1471.1399999999999" y="-612.8" as="sourcePoint" />
+            <mxPoint x="1470" y="-680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-20" value="Nutzung" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-19" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-21" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.894;exitY=-0.056;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-8" target="xLPJ1dpLm62vggdc6FZ8-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1610" y="-612" as="sourcePoint" />
+            <mxPoint x="1611" y="-717" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-22" value="Finanzierung" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-21" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-8" value="Freie Schule" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;shadow=1;sketch=1;sketchStyle=comic;fillColor=#cce5ff;strokeColor=#36393d;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="-610" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-24" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.185;exitY=0.002;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1340" y="-607" as="sourcePoint" />
+            <mxPoint x="1341" y="-737" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-25" value="z.B. Onboarding" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-24" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-29" value="" style="endArrow=classic;html=1;rounded=0;shadow=1;sketch=1;curveFitting=1;jiggle=2;sketchStyle=comic;exitX=0.797;exitY=0;exitDx=0;exitDy=0;entryX=0.333;entryY=1.014;entryDx=0;entryDy=0;exitPerimeter=0;startArrow=classic;startFill=1;entryPerimeter=0;" parent="1" source="xLPJ1dpLm62vggdc6FZ8-10" target="xLPJ1dpLm62vggdc6FZ8-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1352" y="-690" as="sourcePoint" />
+            <mxPoint x="1351" y="-727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLPJ1dpLm62vggdc6FZ8-30" value="z.B. Buchhaltung" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" parent="xLPJ1dpLm62vggdc6FZ8-29" vertex="1" connectable="0">
+          <mxGeometry x="0.0055" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eoEXeocOAcyJxfr1lPVJ" name="Edgy Servicenetzwerk">
+    <mxGraphModel dx="1462" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-1" value="Fähigkeiten" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-4" value="&lt;font color=&quot;#262626&quot;&gt;Zweck&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=14;fillColor=#80FFB7;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-5" value="Aufgaben" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=14;fillColor=#ff99bd;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-7" value="&lt;font color=&quot;#262626&quot;&gt;Erleichtere Administrative Prozesse&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fontSize=14;fillColor=#80FFB7;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-10" value="Mandanten-Buchhaltung" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="130" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-11" value="Mandanten-verwaltung" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="220" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-12" value="IT-Betrieb" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="310" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-13" value="Prozessentwicklung" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gLYF5jO67I8ZL4UI78HT-14" value="Information und Kommunikation" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="490" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sj2wdaVVjLTv-nhvuPco-1" value="Genossenschafts-verwaltung" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=2;fillColor=#a6c0ff;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="585" width="130" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

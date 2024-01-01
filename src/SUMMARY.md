@@ -22,11 +22,11 @@
     - [Lohnauswertung](finanzverwaltung/lohnbuchhaltung/lohnauswertung.md)
 
 - [Information und Kommunikation](it.md)
+  - [Informationsmanagement](it/informationsmanagement.md)
+    - [Publikation](it/informationsmanagement/publikation.md)
   - [Prozessunterstützung](it/prozessunterstuetzung.md)
     - [Darstellung der Prozessdiagramme](it/prozessunterstuetzung/prozessbilder.md)
     - [Weitere Schulprozesse](it/prozessunterstuetzung/weitere-schulprozesse.md)
-  - [Informationsmanagement](it/informationsmanagement.md)
-    - [Publikation](it/informationsmanagement/publikation.md)
 
 [Beitragende]()
 [Datenschutz](datenschutz.md)
