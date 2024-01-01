@@ -20,3 +20,5 @@ Weitere Prozesse in Planung:
 * Kommunikationsprozesse
 * Regulatorische Prozesse
 
+![Gliederung der Services](gliederung.png)
+

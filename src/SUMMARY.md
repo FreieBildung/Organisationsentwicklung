@@ -2,7 +2,7 @@
 
 [Einleitung](einleitung.md)
 
-- [Finanzverwaltung](finanzverwaltung.md)**
+- [Finanzverwaltung](finanzverwaltung.md)
   - [Debitorenbuchhaltung](finanzverwaltung/debitorenbuchhaltung.md)
     - [Elternbeitragsverarbeitung](finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung.md)
       - [Stammdaten-Abrechnungs-Management](finanzverwaltung/debitorenbuchhaltung/elternbeitragsverarbeitung/stammdaten-abrechnungs-management.md)
