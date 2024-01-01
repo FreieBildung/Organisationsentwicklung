@@ -1,3 +1,0 @@
-# Leistungsprozesse
-
-* **[Finanzverwaltung](finanzverwaltung.md)**
