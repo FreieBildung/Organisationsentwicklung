@@ -4,12 +4,10 @@
 
 ### Website
 
-Das Handbuch zur Organisationsentwicklung wird weitgehend automatisch publiziert. Dazu dient die versionierte Ablage aller Inhalte im github Projekt-Repository. Zum Schreiben und schnellen Testen kann die Erzeugung auch lokal auf dem PC durchgeführt werden.
+Die Website wird durch das Tool [mdbook](https://rust-lang.github.io/mdBook/index.html) erstellt. Dadurch wird es möglich, das Handbuch zur Organisationsentwicklung wird weitgehend automatisch zu publizieren. Dazu dient die versionierte Ablage aller Inhalte im github Projekt-Repository. Zum Schreiben und schnellen Testen kann die Erzeugung auch lokal auf dem PC durchgeführt werden.
 
 ### PDF
 Die Erzeugung von PDFs ist möglich, allerdings momentan noch eingeschränkt.
-* Keine Titelseite
-* Keine Prozessdiagramme (ein Workaround findet sich auf der Seite zur Eingliederungshilfe)
 * Nicht automatisierbar, das Modul führt zu Fehlern im automatischen Deployment.
 
 ## Prozessbeteiligte
