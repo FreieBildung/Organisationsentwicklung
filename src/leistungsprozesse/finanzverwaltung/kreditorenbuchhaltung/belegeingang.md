@@ -21,6 +21,9 @@
   * Bei Überschreitung eines Freigabebetrages prüft ein Vorgesetzter die Rechnung ebenfalls.
 * Die Buchhaltung bucht den Beleg kreditorisch.
 
+### Schnittstellen
+
+
 ### Regelungen
 
 
