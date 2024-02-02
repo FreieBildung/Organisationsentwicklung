@@ -1,4 +1,4 @@
-# Lizenz
+# Lizenzübersicht
 
 **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de)** Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International 
 

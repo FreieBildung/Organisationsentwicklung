@@ -2,7 +2,7 @@
 
 # Handbuch Servicenetzwerk Freie Bildung
 
-Das Servicenetzwerk Freie Bildung konzipiert ein Genossenschaftsmodell, in dem freie Schulen genossenschaftlich die Verbesserung ihrer administrativen Abläfe organisieren. Das Konzept ist aufgrund der CC BY-SA 4.0 Lizenz offen verfügbar.
+Das Servicenetzwerk Freie Bildung konzipiert ein Genossenschaftsmodell, in dem freie Schulen genossenschaftlich die Verbesserung ihrer administrativen Abläufe organisieren. Das Konzept ist aufgrund der CC BY-SA 4.0 Lizenz offen verfügbar.
 
 Dieses ebook stellt die vom Servicenetzwerk unterstützten Abläufe vor.
 
